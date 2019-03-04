@@ -97,5 +97,181 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*=============== HEADER ===============*/
+.logo {
+  position: fixed;
+  top: .5rem;
+  right: 2%;
+  width: 15%; }
+
+.logo img {
+  width: 100%; }
+
+#menuIcon {
+  cursor: pointer;
+  position: fixed;
+  cursor: pointer;
+  top: 1.5em;
+  left: 1.5rem;
+  z-index: 5; }
+
+#menuIcon .wrapper {
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+  z-index: 5; }
+
+#menuIcon span {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s;
+  animation: icon-pulse 1.5s linear infinite; }
+
+@keyframes icon-pulse {
+  0% {
+    opacity: 0.2; }
+  25% {
+    opacity: 0.3; }
+  50% {
+    opacity: 0.4; }
+  75% {
+    opacity: 0.3; }
+  100% {
+    opacity: 0.2;
+    width: 50px;
+    height: 50px; } }
+#menuIcon span.expand {
+  background-color: transparent; }
+
+#menuIcon div, #menuIcon div::before, #menuIcon div::after {
+  width: 1.34rem;
+  height: .2rem;
+  background-color: #ad1d33;
+  z-index: 5;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  transition: all 0.5s ease; }
+
+#menuIcon div::after {
+  margin-top: 0.4rem; }
+
+#menuIcon div::before {
+  margin-top: -0.4rem; }
+
+#menuIcon.expand div {
+  background-color: transparent; }
+
+#menuIcon.expand div::before,
+#menuIcon.expand div::after {
+  background-color: #ad1d33;
+  margin-top: 0; }
+
+#menuIcon.expand div:after {
+  transform: rotate(45deg); }
+
+#menuIcon.expand div::before {
+  transform: rotate(-45deg); }
+
+/*=========================MENU BAR ====================*/
+.menuBar-big {
+  display: none; }
+
+.menuBar-small .mainList {
+  position: fixed;
+  padding: 2rem 1rem 1rem;
+  width: 90%;
+  left: -90%;
+  transition: 0.5s ease;
+  background-color: #272d3b;
+  color: white;
+  z-index: 2; }
+
+.mainList li {
+  padding: .6rem; }
+
+.menuBar-small .mainList.expand {
+  left: 0; }
+
+.classesIcon {
+  margin-left: 5%;
+  cursor: pointer;
+  color: #ad1d33;
+  font-size: 1rem;
+  transition: .3s ease-in-out; }
+
+.classesIcon.expand {
+  transform: rotate(180deg); }
+
+.classesMenu {
+  overflow: hidden;
+  height: 0;
+  transition: 1s ease;
+  margin-top: .5rem;
+  margin-left: 2%;
+  background-color: #2d3444; }
+
+.classesMenu.expand {
+  overflow: visible;
+  height: 100%; }
+
+/*====================BANNER=====================*/
+.banner {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .banner .greeting {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: -500px;
+    border-radius: 15px 0 15px 0;
+    transform: translate(-10%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: .5rem;
+    animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
+    box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.705); }
+
+@keyframes flyIn {
+  100% {
+    left: 15%; } }
+.banner::after {
+  content: '';
+  background-image: url("../images/red-theme.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  animation-name: zoomIn;
+  animation-delay: 10ms;
+  animation-duration: 60s;
+  animation-iteration-count: infinite; }
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.2); } }
 /*end media query*/
 /*end media query*/

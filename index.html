@@ -6,29 +6,100 @@
 
 
         <meta charset="utf-8">
-        <title>Company Name</title>
+        <title>Fliss Fame Academy</title>
+        <!-- <link rel='icon' type="image/icon" href="./images/my-logo1x.png"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link href='css/styles.css' rel='stylesheet'>
       
     </head>
     <body>
         <!--page header goes here-->
-        <header>
-            <h1>Company Name</h1>
-            <h2>Slogan</h2>
+        <header>            
+            <div id='menuIcon'>
+                <div class='wrapper'>
+                    <div></div>
+                </div>                
+                <span></span>
+            </div>
+            <figure class="logo">
+                <img src="images/Fliss_logo.png">
+            </figure>
         </header>
 
-        <!--page navigation goes here-->
-        <nav>
-            <ul>
+        <!--page navigation for small screen goes here-->
+        
+        <nav class='menuBar-small'>           
+            <ul class='mainList'>
                 <li>Home</li>
-                <li></li>
+                <li>About</li>
+                <li>Classes <i class="fas fa-angle-double-up classesIcon"></i>
+                    <ul class='classesMenu'>
+                        <li>Street Dancing</li>
+                        <li>Drama</li>
+                        <li>Art and Design</li>
+                        <li>Singing</li>
+                        <li>Football</li>
+                        <li>Non Contact Boxing</li>
+                    </ul>
+                </li>
+                <li>Contact</li>
             </ul>
         </nav>
-
+        <!--page navigation for med/big screen goes here-->
+        <nav class='menuBar-big'>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Classes</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
         <!--Page content goes here-->
-        <main></main>
+        <main>
+            <!--Banner-->
+            <section>
+                <div class='banner'>
+                    <div class='greeting'>
+                        <h3>Welcome to</h3>
+                        <h1>Fliss Fame Academy</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!--About-->
+            <section>
+                <div>
+                    <h1>About Us</h1>
+                    <p></p>
+                    <p></p>
+                </div>
+            </section>
+
+
+            <!--Classes-->
+            <section>
+                <h1>Classes</h1>
+                <div>
+                    <div>Street Dancing</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+
+
+            <!--Contact-->
+            <section>
+                <div></div>
+                <div></div>
+            </section>
+        </main>
 
         <!--Page footer goes here-->
         <footer></footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src='scripts/menubar.js'></script>
     </body>
 </html>
