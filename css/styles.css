@@ -237,12 +237,11 @@ html {
 .banner {
   height: 200px;
   width: 100%;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .banner .greeting {
     position: absolute;
-    width: 200px;
-    top: 50%;
+    width: 90%;
+    top: 200px;
     left: -500px;
     color: white;
     border-radius: 15px 0 15px 0;
@@ -255,6 +254,9 @@ html {
 @keyframes flyIn {
   100% {
     left: 15%; } }
+.banner .greeting h1 {
+  font-size: 1.5rem; }
+
 .banner::after {
   content: '';
   background-image: url("../images/banner.jpg");
