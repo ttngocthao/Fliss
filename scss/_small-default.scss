@@ -22,22 +22,23 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     left:1.5rem;
     z-index: 5;
     
+    
 }
 #menuIcon .wrapper{
-    background-color: transparent;
+    background-color: white;
     border-radius: 50%;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    width:35px;
-    height: 35px;
+    width:50px;
+    height: 50px;
     z-index: 5;
 }
 #menuIcon span{
     width:20px;
     height: 20px;
-    background-color:white;
+    background-color:$secondaryColor;
     position:absolute;
     z-index:-1;
     border-radius: 50%;
@@ -53,13 +54,13 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
   25%  { opacity: 0.3; }
   50%  { opacity: 0.4; }
   75%  { opacity: 0.3; }
-  100% { opacity: 0.2; width:50px;height:50px; }
+  100% { opacity: 0.2; width:80px;height:80px; }
 }
 #menuIcon  span.expand{
     background-color: transparent;
 }
 #menuIcon div, #menuIcon div::before, #menuIcon div::after{
-    width:1.34rem;
+    width:1.6rem;
     height:.2rem;
     background-color: $primaryColor;
     z-index: 5;
@@ -74,10 +75,10 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 
 #menuIcon div::after{
-    margin-top:0.4rem;
+    margin-top:0.5rem;
 }
 #menuIcon div::before{
-    margin-top:-0.4rem;
+    margin-top:-0.5rem;
 }
 #menuIcon.expand div{
     background-color: transparent;
@@ -106,7 +107,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     // overflow-y: scroll;
     left:-90%;
     transition: 0.5s ease;
-    background-color: $fontColor;
+    background-color: $secondaryColor;
     color:white;
     z-index: 2;
 }
@@ -132,7 +133,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     transition: 1s ease;
     margin-top: .5rem;    
     margin-left:2%;
-    background-color: lighten($fontColor, 3%);
+    background-color: lighten($secondaryColor, 3%);
 }
 .classesMenu.expand{
     overflow: visible;
@@ -185,8 +186,9 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 /*==================content============*/
 .content{
-    margin: .5rem auto 1rem;
+    margin: 3rem auto;
     width:90%;
+    color: $secondaryColor;
 }
 .content figure img{
     width:100%;
@@ -200,6 +202,10 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 .content div{
     text-align: center;
+    margin: 1rem auto;
+}
+.content div p{
+    margin: .5rem 0;
 }
 .founder figure{
     width:80%;
@@ -209,4 +215,8 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 .founder img{
     border-radius:50%;
     border: 2px dashed $primaryColor;
+}
+/*=================CLASSES============*/
+.lesson{
+
 }
