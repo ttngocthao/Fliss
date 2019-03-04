@@ -142,10 +142,10 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 /*====================BANNER=====================*/
 .banner{
-    height: 200px;
+   height: 250px;
     width: 100%;
     position: relative;
-    // overflow: hidden;
+    overflow-x: hidden;
     .greeting{
         position: absolute;
         width: 90%;
@@ -222,6 +222,12 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 .content div p{
     margin: .5rem 0;
 }
+.aboutUs{
+    margin-top:0;
+}
+.aboutUs div{
+    margin-top: 0;
+}
 .founder figure{
     width:80%;
     margin: 1rem auto;
@@ -263,6 +269,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     color:purple;
 }
 .contact .media ul{
+    widows: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }

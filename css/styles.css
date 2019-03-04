@@ -236,9 +236,10 @@ html {
 
 /*====================BANNER=====================*/
 .banner {
-  height: 200px;
+  height: 250px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   .banner .greeting {
     position: absolute;
     width: 90%;
@@ -312,6 +313,12 @@ html {
 .content div p {
   margin: .5rem 0; }
 
+.aboutUs {
+  margin-top: 0; }
+
+.aboutUs div {
+  margin-top: 0; }
+
 .founder figure {
   width: 80%;
   margin: 1rem auto; }
@@ -351,6 +358,7 @@ html {
   color: purple; }
 
 .contact .media ul {
+  widows: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
 
