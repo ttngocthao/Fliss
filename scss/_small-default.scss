@@ -9,6 +9,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     top:.5rem;
     right:2%;
     width:15%;
+    z-index: 5;
 }
 
 .logo img{
@@ -192,16 +193,24 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     margin: 3rem auto;
     width:90%;
     color: $secondaryColor;
+    font-size:1rem;
 }
 .content figure img{
     width:100%;
 }
 .content h1{
+    width:80%;
     color: $primaryColor;
     font-size: 1.5rem;
     text-align: right;
-    margin:1rem 0;
+    text-align: center;
+    margin:1rem auto;
     letter-spacing: .1rem;
+    display: inline-block;
+    padding: .5rem;
+    border-radius: 0px 0 5px 5px;
+    border-bottom: solid $secondaryColor 2px;
+    
 }
 .content div{
     text-align: center;
@@ -220,6 +229,17 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     border: 2px dashed $primaryColor;
 }
 /*=================CLASSES============*/
-.lesson{
-
+.classes .lesson{
+    width: 90%;
+    // background-color: coral;
+    margin: 1rem auto 3rem auto;
+}
+.lesson figure{
+    width:100%;
+}
+.lesson figure img{
+    width: 100%;
+}
+.classes .lesson h3{    
+    font-size:1.2rem;
 }
