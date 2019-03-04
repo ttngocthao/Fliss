@@ -244,19 +244,20 @@ html {
     width: 200px;
     top: 50%;
     left: -500px;
+    color: white;
     border-radius: 15px 0 15px 0;
     transform: translate(-10%, -50%);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(173, 29, 51, 0.9);
     padding: .5rem;
     animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
-    box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.705); }
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.8); }
 
 @keyframes flyIn {
   100% {
     left: 15%; } }
 .banner::after {
   content: '';
-  background-image: url("../images/pic1.jpg");
+  background-image: url("../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -274,7 +275,7 @@ html {
   0% {
     transform: scale(1); }
   100% {
-    transform: scale(1.2); } }
+    transform: scale(1.5); } }
 /*==================content============*/
 .content {
   margin: .5rem auto 1rem;
