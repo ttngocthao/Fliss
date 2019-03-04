@@ -341,5 +341,24 @@ html {
   color: #ec2b48;
   text-decoration: none; }
 
+/*==================CONTACT============*/
+.contact div {
+  margin: 1rem auto; }
+
+.contact div h3 {
+  font-size: 1.3rem;
+  padding: .5rem 0 1rem;
+  color: purple; }
+
+.contact .media ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.contact ul li {
+  list-style: none; }
+
+.contact .media ul li i {
+  font-size: 2rem; }
+
 /*end media query*/
 /*end media query*/
