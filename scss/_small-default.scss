@@ -164,7 +164,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     100%{left:15%;}
 }
 .banner .greeting h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .banner::after{
     content: '';
@@ -208,8 +208,11 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     letter-spacing: .1rem;
     display: inline-block;
     padding: .5rem;
-    border-radius: 0px 0 5px 5px;
-    border-bottom: solid $secondaryColor 2px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: $secondaryColor;
+    border-bottom-width: 2px;
     
 }
 .content div{
@@ -241,5 +244,5 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     width: 100%;
 }
 .classes .lesson h3{    
-    font-size:1.2rem;
+    font-size:1.5rem;
 }
