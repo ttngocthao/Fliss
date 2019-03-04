@@ -164,7 +164,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     100%{left:15%;}
 }
 .banner .greeting h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .banner::after{
     content: '';
@@ -245,4 +245,11 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 .classes .lesson h3{    
     font-size:1.5rem;
+    padding-bottom: 1rem;
+    letter-spacing: .2rem;
+    color: lighten( $primaryColor,5%);
+}
+.classes .lesson a{
+    color: lighten( $primaryColor,5%);
+    text-decoration: none;
 }
