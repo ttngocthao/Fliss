@@ -207,7 +207,7 @@ html {
   z-index: 2; }
 
 .mainList li {
-  padding: .6rem; }
+  padding: .3rem; }
 
 .menuBar-small .mainList.expand {
   left: 0; }
@@ -215,7 +215,7 @@ html {
 .classesIcon {
   margin-left: 5%;
   cursor: pointer;
-  color: #ad1d33;
+  color: white;
   font-size: 1rem;
   transition: .3s ease-in-out; }
 
@@ -236,22 +236,23 @@ html {
 
 /*====================BANNER=====================*/
 .banner {
-  height: 250px;
+  height: 300px;
   width: 100%;
   position: relative;
   overflow-x: hidden; }
-  .banner .greeting {
-    position: absolute;
-    width: 90%;
-    top: 200px;
-    left: -500px;
-    color: white;
-    border-radius: 15px 0 15px 0;
-    transform: translate(-10%, -50%);
-    background-color: rgba(173, 29, 51, 0.9);
-    padding: .5rem;
-    animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
-    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.8); }
+
+.greeting {
+  position: absolute;
+  width: 90%;
+  top: 300px;
+  left: -500px;
+  color: white;
+  border-radius: 15px 0 15px 0;
+  transform: translate(-10%, -50%);
+  background-color: rgba(173, 29, 51, 0.9);
+  padding: .5rem;
+  animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
+  box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.8); }
 
 @keyframes flyIn {
   100% {
@@ -261,19 +262,15 @@ html {
 
 .banner::after {
   content: '';
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/mainBanner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
-  animation-name: zoomIn;
-  animation-delay: 10ms;
-  animation-duration: 60s;
-  animation-iteration-count: infinite; }
+  z-index: -2; }
 
 @keyframes zoomIn {
   0% {
@@ -314,7 +311,7 @@ html {
   margin: .5rem 0; }
 
 .aboutUs {
-  margin-top: 0; }
+  margin-top: 50px; }
 
 .aboutUs div {
   margin-top: 0; }
@@ -362,11 +359,124 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
 
+.contact .media ul a {
+  text-decoration: none;
+  color: #4b59b6; }
+
 .contact ul li {
   list-style: none; }
 
 .contact .media ul li i {
   font-size: 2rem; }
 
+#map {
+  height: 300px; }
+
+/*------------------Footer---------------*/
+footer {
+  margin-left: 2%;
+  font-size: .8rem; }
+  footer ul li {
+    list-style: none; }
+  footer .developer {
+    font-size: .7rem;
+    color: silver; }
+
+@media only screen and (min-width: 560px) {
+  .logo {
+    width: 10%; }
+
+  .content {
+    color: purple; }
+
+  .content h1 {
+    font-size: 2rem;
+    letter-spacing: .2rem; }
+
+  .banner {
+    min-height: 400px;
+    max-height: 100%; }
+
+  .greeting {
+    top: 400px; }
+
+  .greeting h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
+
+  .greeting h3 {
+    font-size: 1.5rem; }
+
+  .founder .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; }
+
+  .founder figure {
+    min-width: 60%;
+    max-width: 70%; }
+
+  .classes .lesson h3 {
+    letter-spacing: 0;
+    font-size: 1.5rem; }
+
+  .classes .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  footer ul li:nth-child(2) {
+    margin-right: 2%;
+    text-align: right; } }
 /*end media query*/
+@media only screen and (min-width: 1140px) {
+  .content {
+    color: yellowgreen; }
+
+  .menuBar-small {
+    display: none; }
+
+  #menuIcon {
+    display: none; }
+
+  .menuBar-big {
+    display: block;
+    position: fixed;
+    z-index: 2; }
+
+  .menuBar-big .mainList {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #4b59b6;
+    height: 2rem; }
+
+  .menuBar-big .mainList #classes {
+    width: 5rem; }
+
+  .menuBar-big .classesIcon {
+    color: #ad1d33; }
+
+  .menuBar-big .classesMenu {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 10rem; }
+
+  .menuBar-big .classesMenu.expand {
+    height: 13rem; }
+
+  .content h1 {
+    width: 40%; }
+
+  .founder figure {
+    min-width: 50%;
+    max-width: 60%;
+    margin: 1rem 0; }
+
+  .classes .wrapper {
+    grid-template-columns: repeat(3, 1fr); }
+
+  footer .developer {
+    text-align: right;
+    margin-right: 2%; } }
 /*end media query*/

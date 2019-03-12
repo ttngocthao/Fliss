@@ -1,0 +1,52 @@
+.content{
+    color: yellowgreen;
+}
+.menuBar-small{
+    display: none;
+}
+#menuIcon{
+    display:none;
+}
+.menuBar-big{
+    display: block;
+    position: fixed;
+    z-index: 2;
+}
+.menuBar-big .mainList {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    color:$secondaryColor;
+    height: 2rem;
+}
+.menuBar-big .mainList #classes{
+    width: 5rem;
+}
+.menuBar-big .classesIcon{
+    color: $primaryColor;
+}
+.menuBar-big .classesMenu{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 10rem;
+    
+}
+.menuBar-big .classesMenu.expand{
+    height: 13rem;
+}
+// .menuBar-big .classesMenu li{
+//     width:10rem;
+// }
+.content h1{
+    width: 40%;
+}
+.founder figure{
+    min-width: 50%;
+    max-width:60%;
+    margin: 1rem 0;
+}
+.classes .wrapper{
+    grid-template-columns: repeat(3,1fr)
+}
+footer .developer{
+    text-align: right;
+    margin-right: 2%;
+}

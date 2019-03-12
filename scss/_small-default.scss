@@ -113,7 +113,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     z-index: 2;
 }
 .mainList li{
-    padding: .6rem;
+    padding: .3rem;
 }
 .menuBar-small .mainList.expand{
     left:0;
@@ -121,7 +121,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 .classesIcon{
     margin-left: 5%;
     cursor: pointer;
-    color: $primaryColor;
+    color: white;
     font-size: 1rem;
     transition: .3s ease-in-out;
 }
@@ -142,23 +142,24 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 /*====================BANNER=====================*/
 .banner{
-   height: 250px;
+   height: 300px;
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    .greeting{
-        position: absolute;
-        width: 90%;
-        top:200px;
-        left: -500px;
-        color:white;
-        border-radius: 15px 0 15px 0;
-        transform: translate(-10%,-50%);
-        background-color: rgba($color: $primaryColor, $alpha: .9);
-        padding:.5rem;
-        animation: flyIn 2s cubic-bezier(.5,.5,0,1) forwards;
-        box-shadow: 3px 3px 3px rgba(gray, 0.8);
-    }
+   
+}
+.greeting{
+    position: absolute;
+    width: 90%;
+    top:300px;
+    left: -500px;
+    color:white;
+    border-radius: 15px 0 15px 0;
+    transform: translate(-10%,-50%);
+    background-color: rgba($color: $primaryColor, $alpha: .9);
+    padding:.5rem;
+    animation: flyIn 2s cubic-bezier(.5,.5,0,1) forwards;
+    box-shadow: 3px 3px 3px rgba(gray, 0.8);
 }
 @keyframes flyIn{
     100%{left:15%;}
@@ -168,20 +169,20 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
 }
 .banner::after{
     content: '';
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/mainBanner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 100%;
     width: 100%;
     position: absolute;
     top:0;
     left: 0;
     z-index: -2;
-    animation-name: zoomIn;
-    animation-delay: 10ms;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    // animation-direction: alternate-reverse;
+    // animation-name: zoomIn;
+    // animation-delay: 10ms;
+    // animation-duration: 60s;
+    // animation-iteration-count: infinite;
+    
 }
 
 @keyframes zoomIn{
@@ -223,7 +224,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     margin: .5rem 0;
 }
 .aboutUs{
-    margin-top:0;
+    margin-top:50px;
 }
 .aboutUs div{
     margin-top: 0;
@@ -273,9 +274,29 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+.contact .media ul a{
+    text-decoration: none;
+    color:$secondaryColor;
+}
 .contact ul li{
     list-style: none;
 }
+
 .contact .media ul li i{
     font-size: 2rem;
+}
+#map{
+   height: 300px;;
+}
+/*------------------Footer---------------*/
+footer{
+    margin-left: 2%;
+    font-size: .8rem;
+    ul li{
+        list-style: none;
+    }
+    .developer{
+        font-size: .7rem;
+        color: silver;
+    }
 }

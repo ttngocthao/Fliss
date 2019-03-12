@@ -48,10 +48,19 @@
         </nav>
         <!--page navigation for med/big screen goes here-->
         <nav class='menuBar-big'>
-            <ul>
+            <ul class="mainList">
                 <li>Home</li>
                 <li>About</li>
-                <li>Classes</li>
+                <li id='classes'>Classes<i class="fas fa-angle-double-up classesIcon"></i>
+                    <ul class='classesMenu'>
+                        <li>Street Dancing</li>
+                        <li>Drama</li>
+                        <li>Art and Design</li>
+                        <li>Singing</li>
+                        <li>Football</li>
+                        <li>Non Contact Boxing</li>
+                    </ul>
+                </li>
                 <li>Contact</li>
             </ul>
         </nav>
@@ -60,10 +69,11 @@
             <!--Banner-->
             <section>
                 <div class='banner'>
-                    <div class='greeting'>
-                        <h3>Welcome to</h3>
-                        <h1>Fliss Fame Academy</h1>
-                    </div>
+                   
+                </div>
+                <div class='greeting'>
+                    <h3>Welcome to</h3>
+                    <h1>Fliss Fame Academy</h1>
                 </div>
             </section>
 
@@ -73,9 +83,10 @@
                     <h1>About Us</h1>
                     <div>
                         <p>The Fliss Fame Academy in West London, Maida Hill, is a community based performing arts, talent scouting and sports company, bringing a wide variety of amazing opportunities in all classes that are delivered to our young people of today.</p> 
-                        <figure>
+                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/xlBSnArRRYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <figure>
                             <img src='images/RGXnzke.png'>
-                        </figure>
+                        </figure> -->
                         <p>Our main aims are to teach major life skills, develop individual goals, build confidence, self esteem, finding hidden talents, create and direct live performances and competitions all over London.</p>
                         <p>Read more...</p>
                         </div>
@@ -85,13 +96,16 @@
             <section class='content founder'>
                 <div>
                     <h1>Our Founder</h1>
-                    <div>
+                    <div class="wrapper"> 
                         <figure>
                             <img src="images/jaime1.png">
                         </figure>
-                        <p>Fliss Fame Academy was created by Ms Jaime Coombes way back in 2011!</p>
-                        <p>Jaime has combined all her knowledge and skills to help build Fliss Fame Academy for the local community helping to support local communities come together by bringing amazing opportunities to all young people from a wide variety of different grounds.</p>
-                        <p>Read more...</p>
+                        <div>
+                            <p>Fliss Fame Academy was created by Ms Jaime Coombes way back in 2011!</p>
+                            <p>Jaime has combined all her knowledge and skills to help build Fliss Fame Academy for the local community helping to support local communities come together by bringing amazing opportunities to all young people from a wide variety of different grounds.</p>
+                            <p>Read more...</p>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -100,7 +114,7 @@
             <section class='content classes'>
                 <div>
                     <h1>Classes</h1>
-                    <div>
+                    <div class='wrapper'>
                         <div class='lesson dancing'>
                             <h3>Street Dancing</h3>
                             <figure>
@@ -119,7 +133,6 @@
                             <div>
                                 <p>Drama is a discrete skill in itself (acting, theatre, refined skill) and therefore it is offered as a  ‘subject’ in secondary school.  </p>
                                 <p>However Drama is also a tool which is flexible, versatile and applicable among a areas of curriculum.</p>
-                                <p>Through its application as a tool in the primary classroom, Drama can be experienced by all children.</p>
                                 <a href="#"><p>Find the schedule...</p></a>
                             </div>
                         </div>
@@ -153,7 +166,7 @@
                             <div>
                                 <p>Fliss Fame Academy’s Football sessions were created to support our young people. </p>
                                 <p>It will help them to build up their confidence, self esteem, overcome shyness, improve mental, emotional and physical fitness. </p>
-                                <p>The fast aspect of the game also encourages quick thinking & adaptability.</p>
+                                
                                 <a href="#"><p>Find the schedule...</p></a>
                             </div>
                         </div>
@@ -180,21 +193,21 @@
                     <h1>Contact</h1>
                     <div class='media'>
                         <ul >
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-facebook-square"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
+                            <li><a target="blank" href="https://www.instagram.com/flissfameacademy/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a target="blank" href="https://www.facebook.com/Fliss-Fame-Academy-149625275616401/"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a target="blank" href="https://twitter.com/flissycoombes"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>                    
                     <div class='address'>
                         <ul>
                             <li>Fliss Fame Academy</li>
                             <li>Stowe Centre, 258 Harrow Rd, London W2 5ES </li>
-                            <li>(+44) 07800 822 408 </li>
-                            <li>hello@flissfameacademy.co.uk</li>
+                            <li>(+44) 07957 677 943 </li>
+                            <li>flissfameacademy@gmail.com</li>
                         </ul>
                     </div>
-                    <div class='map'>
-
+                    <!--Google Map-->
+                    <a href="https://www.google.com/maps/search/stowe+centre,+258+harrow+rd,+london+w2+5es/@51.5203696,-0.1928743,17z" target="blank"><div id='map'></div></a>
                     </div>
                     <div class='form'>
                         
@@ -208,11 +221,14 @@
         <footer>
             <ul>
                 <li><a href="#">Privacy-policy</a></li>
-                <li>© 2018 FLISS FAME ACADEMY</li>
-                <li>Web Developed by <a href="#">Thao Truong</a></li>
+                <li>© 2018 FLISS FAME ACADEMY</li>         
             </ul>
+            <p class='developer'>Website is developed by <a href="https://www.thaotruong.uk">Thao Truong</a></p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src='scripts/menubar.js'></script>
+        <!--GoogleMap-->
+        <script src="scripts/googleMap.js"></script>
+        <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDLRtT-NRCuIVAsiJ40m1iCwHxMOBfR5Cs&callback=initMap'></script>
     </body>
 </html>
