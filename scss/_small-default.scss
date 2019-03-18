@@ -1,6 +1,6 @@
 /*prevent adjustments of font size after oreientation changes in IE on windows phone and ios*/
-html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
-
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;overflow-x: hidden };
+body{ overflow-x: hidden};
 /*apply a natural box layout model to all elements*/
 *{-moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;font-family: 'Lato', sans-serif ;line-height: 1.5rem;}
 /*=============== HEADER ===============*/
@@ -111,6 +111,14 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     background-color: $secondaryColor;
     color:white;
     z-index: 2;
+}
+.menuBar-big .mainList a{
+    text-decoration: none;
+    color:$secondaryColor;
+}
+.menuBar-small .mainList a{
+    text-decoration: none;
+    color:white;
 }
 .mainList li{
     padding: .3rem;
@@ -238,6 +246,17 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; };
     border-radius:50%;
     border: 2px dashed $primaryColor;
 }
+.crowdFunding{
+    width:95%;
+    margin: 1rem auto;
+    background-color: $primaryColor;
+    color:white;
+    padding:.5rem;
+    text-align: center;
+}
+.crowdFunding a{
+    color: white;
+}
 /*=================CLASSES============*/
 .classes .lesson{
     width: 90%;
@@ -299,4 +318,129 @@ footer{
         font-size: .7rem;
         color: silver;
     }
+}
+/*=================ABOUT US PAGE=================*/
+.aboutUs ul li{
+    list-style: none;
+}
+.aboutUs h3, .events h3{
+    color: $primaryColor;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem auto .5rem auto;
+}
+.aboutUs .purposes ul li{
+    text-align: left;
+    margin: .5rem 0 .5rem 1rem;
+}
+.aboutUs .purposes ul li::before{
+    content: "\f559";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: $primaryColor;
+    font-size: 1.2rem;
+    padding-right: 4%;
+}
+.partnerships ul li{
+    position: relative;
+}
+.partnerships figure{
+    width:50%;
+    margin:.5rem auto;
+}
+.partnerships figcaption{
+    position: absolute;
+    width: 80%;
+    top:50%;
+    left:180%;
+    transform: translate(0,-50%);
+    background-color: #949cd3d8;
+    border-radius: 20px;
+    padding:.3rem;
+    color: white;
+    animation: flyRight;
+    animation-duration: .9s;
+    animation-fill-mode: both;
+   
+}
+@keyframes flyRight{
+    100%{
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
+.event-container {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    border: 1px solid rgb(179, 179, 179);
+    margin: 0 auto;
+    padding: .5rem 0;
+    color:$secondaryColor;
+}
+.event-date {
+    grid-column: 1/ span 1;
+    grid-row: 1 / span 1;
+}
+.event-content{
+    grid-column: 2/ span 2;
+    grid-row: 1 / span 1;
+}
+.event-detail{
+    grid-column: 1/ span 3;
+    grid-row: 2 / span 1;
+}
+.event-date, .event-content{
+    align-self: center;//vertically center the element in the grid
+    // justify-self: center;//horizontally center the element in the grid
+}
+.event-date li{
+    list-style: none;
+    text-align: center;
+}
+.event-date li:nth-child(1){
+    font-size: 1.5rem;
+    color: $primaryColor;
+}
+.event-content{
+    text-align: center;
+    position: relative;
+}
+.event-content h1{
+    width: 80%;
+    margin: 0 10% 0 2%;
+}
+.event-content .event-read-btn{
+    position: absolute;
+    top:0;
+    right: 2%;
+    transform: translate(2%,0);
+    cursor: pointer;
+}
+.event-content .event-read-btn i{
+    z-index: 2;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    transition: .2s ease-in-out;
+    color: $primaryColor;
+}
+.event-content .event-read-btn i.rotate{
+    transform: rotate(180deg);
+}
+.event-container .event-detail{
+    overflow: hidden;
+    height: 0;
+    transition: height .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.event-container .event-detail.expand{
+    height: 100%;
+}
+.event-container .event-detail div{
+    width: 90%;
+    margin: .3rem auto;
+    text-align: center;
+    font-size: .85rem;
+    border-top: 1px dashed;
+    padding-top: .2rem;
 }
