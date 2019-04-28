@@ -41,8 +41,8 @@
       <ul class="mainList">
         <a href="index.html"><li>Home</li></a>
         <a href="about.html"><li>About Us</li></a>
-        <a href="founder.html" class="actived"><li>Our Founder</li></a>
-        <a href="events.html"><li>Events</li></a>
+        <a href="founder.html"><li>Our Founder</li></a>
+        <a href="events.html" class="actived"><li>Events</li></a>
         <a href="testimonials.html"><li>Testimonials</li></a>
         <li>
           Classes <i class="fas fa-angle-double-up classesIcon"></i>
@@ -63,7 +63,9 @@
       <ul class="mainList">
         <a href="index.html"><li>Home</li></a>
         <a href="about.html"><li>About Us</li></a>
-        <a href="founder.html" class="actived"><li>Our Founder</li></a>
+        <a href="founder.html"><li>Our Founder</li></a>
+        <a href="events.html" class="actived"><li>Events</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li id="classes">
           Classes<i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
@@ -79,7 +81,7 @@
       </ul>
     </nav>
     <!--Page content goes here-->
-    <main class="founder">
+    <main>
       <!--Banner-->
       <section>
         <div class="banner"></div>
@@ -88,55 +90,6 @@
           <h1>Fliss Fame Academy</h1>
         </div> -->
       </section>
-
-      <!--About Us-->
-      <section class="content">
-        <div>
-          <h1>Our Founder</h1>
-          <div class="founder-wrapper">
-            <figure class="img-wrapper">
-              <img src="images/jaime1.png" />
-            </figure>
-
-            <div class="founder-history">
-              <p>
-                Jaime grew up in the local community being very well known by
-                all families and friends in the area. She studied performing
-                arts at Barbara Speakes Stage School in London from the age of
-                11. She then went onto college to achieve a diploma in
-                performing arts.
-              </p>
-              <p>
-                At 19 years old she became a talent judge working alongside a
-                unique talent management agency.
-              </p>
-              <p>
-                Jaime studied personal training at the YMCA in Southhall, giving
-                her a degree in teaching exercise to music and fitness.
-              </p>
-              <p>
-                At 25 she then went on to study at Westminsters play center
-                services for 7 years and trained to be a manager.
-              </p>
-              <p>
-                Jaime has combined all her knowledge and skills to help build
-                Fliss Fame Academy for the local community helping to support
-                local communities come together by bringing amazing
-                opportunities to all young people from a wide variety of
-                different grounds.
-              </p>
-              <p>
-                Combining the performing arts with sports and talent scouting,
-                Jaime knew that there was a great need in deprived areas in west
-                London where young people needed educational, stimulating,
-                motivational activities and somewhere safe where they could go
-                for after school and holidays.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!--Crowd Funding-->
       <section class="crowdFunding">
         <div>
@@ -146,6 +99,14 @@
         <a href="https://www.justgiving.com/crowdfunding/justhelpingus"
           >Please give what you can here</a
         >
+      </section>
+
+      <!--TESTIMONIALS-->
+      <section class="content ">
+        <div>
+          <h1>Testimonials</h1>
+          <div id="testimonials-list"></div>
+        </div>
       </section>
     </main>
 
@@ -162,12 +123,14 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/menubar.js"></script>
+    <script src="scripts/reviews.js"></script>
+    <!-- <script src="scripts/eventToggle.js"></script> -->
     <!--GoogleMap-->
-    <script src="scripts/googleMap.js"></script>
+    <!-- <script src="scripts/googleMap.js"></script>
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLRtT-NRCuIVAsiJ40m1iCwHxMOBfR5Cs&callback=initMap"
-    ></script>
+    ></script> -->
   </body>
 </html>

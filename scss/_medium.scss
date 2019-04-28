@@ -1,52 +1,106 @@
-.logo{
-    width:10%;
+.logo {
+  width: 10%;
 }
-.content{
-    color: purple;
+.content {
+  color: purple;
 }
-.content h1{
-    font-size: 2rem;
-    letter-spacing: .2rem;
+.content h1 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
-.banner{
-    min-height: 400px;
-    max-height: 100%;
+.banner {
+  min-height: 400px;
+  max-height: 100%;
 }
-.greeting{
-    top:400px;
+.greeting {
+  top: 400px;
 }
-.greeting h1{
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+.greeting h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
-.greeting h3{
-    font-size: 1.5rem;
+.greeting h3 {
+  font-size: 1.5rem;
 }
-.founder .wrapper{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items:center;
+.crowdFunding {
+  width: 80%;
 }
-.founder figure{
-    min-width: 60%;
-    max-width:70%;
+.founder .crowdFunding {
+  margin-bottom: 2rem;
 }
-.classes .lesson h3{
-    letter-spacing: 0;
-    font-size: 1.5rem;
+.home .founder .wrapper {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-content: center;
 }
-.classes .wrapper{
-    display: grid;
-    grid-template-columns: repeat(2,1fr)
+.home .founder figure {
+  min-width: 60%;
+  max-width: 70%;
+  justify-self: center;
 }
-
-footer{
-    ul{
-        display: grid;
-        grid-template-columns: repeat(2,1fr)
-    }
-    ul li:nth-child(2){
-        margin-right: 2%;
-        text-align: right;
-    }
+.classes .lesson h3 {
+  letter-spacing: 0;
+  font-size: 1.5rem;
+}
+.classes .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lesson-img-wrapper {
+  width: 70%;
+}
+footer {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul li:nth-child(2) {
+    margin-right: 2%;
+    text-align: right;
+  }
+}
+/*ABOUT HTML*/
+.partnerships-img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs .open-time {
+  margin-left: 1rem;
+}
+.aboutUs .open-time {
+  width: 80%;
+  margin: 0 auto;
+}
+.aboutUs .purposes ul {
+  width: 80%;
+  margin: 0 auto;
+}
+/*FOUNDER PAGE*/
+.founder .founder-wrapper {
+  position: relative;
+}
+.founder .founder-wrapper .img-wrapper {
+  float: left;
+  top: 0;
+  left: 0;
+  width: 30%;
+  margin: 1rem;
+}
+.founder .founder-wrapper .founder-history {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  p {
+    padding: 0.5rem;
+  }
+}
+.review-wrapper {
+  display: grid;
+  padding: 1rem 0.5rem;
+  grid-template-columns: 30% 70%;
+  align-items: start;
 }

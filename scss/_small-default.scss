@@ -1,446 +1,562 @@
 /*prevent adjustments of font size after oreientation changes in IE on windows phone and ios*/
-html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;overflow-x: hidden };
-body{ overflow-x: hidden};
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
 /*apply a natural box layout model to all elements*/
-*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;font-family: 'Lato', sans-serif ;line-height: 1.5rem;}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5rem;
+}
 /*=============== HEADER ===============*/
-.logo{
-    position: fixed;
-    top:.5rem;
-    right:2%;
-    width:15%;
-    z-index: 5;
+.logo {
+  position: fixed;
+  top: 0.5rem;
+  right: 2%;
+  width: 15%;
+  z-index: 5;
 }
 
-.logo img{
-    width:100%;
+.logo img {
+  width: 100%;
 }
-#menuIcon{
-    cursor: pointer;
-    position:fixed;
-    cursor: pointer;
-    top:1.5em;
-    left:1.5rem;
-    z-index: 5;
-    
-    
+#menuIcon {
+  cursor: pointer;
+  position: fixed;
+  cursor: pointer;
+  top: 1.5em;
+  left: 1.5rem;
+  z-index: 5;
 }
-#menuIcon .wrapper{
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width:50px;
-    height: 50px;
-    z-index: 5;
+#menuIcon .wrapper {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 5;
 }
-#menuIcon span{
-    width:20px;
-    height: 20px;
-    background-color:$secondaryColor;
-    position:absolute;
-    z-index:-1;
-    border-radius: 50%;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    transition: 1.5s;
-    animation: icon-pulse 1.5s linear infinite;
+#menuIcon span {
+  width: 20px;
+  height: 20px;
+  background-color: $secondaryColor;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s;
+  animation: icon-pulse 1.5s linear infinite;
 }
 
-@keyframes icon-pulse{
-  0%   { opacity: 0.2; }
-  25%  { opacity: 0.3; }
-  50%  { opacity: 0.4; }
-  75%  { opacity: 0.3; }
-  100% { opacity: 0.2; width:80px;height:80px; }
+@keyframes icon-pulse {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.2;
+    width: 80px;
+    height: 80px;
+  }
 }
-#menuIcon  span.expand{
-    background-color: transparent;
+#menuIcon span.expand {
+  background-color: transparent;
+  animation: none;
 }
-#menuIcon div, #menuIcon div::before, #menuIcon div::after{
-    width:1.6rem;
-    height:.2rem;
-    background-color: $primaryColor;
-    z-index: 5;
-    border-radius: 5px;
-    position:absolute;
-    margin-top:0;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    content:'';
-    transition: all 0.5s ease;
+#menuIcon.expand .wrapper {
+  background-color: $secondaryColor;
+  width: 12rem;
+  padding-top: 2rem;
+  border-radius: 0;
+}
+#menuIcon div,
+#menuIcon div::before,
+#menuIcon div::after {
+  width: 1.6rem;
+  height: 0.2rem;
+  background-color: $primaryColor;
+  z-index: 5;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  transition: all 0.5s ease;
 }
 
-#menuIcon div::after{
-    margin-top:0.5rem;
+#menuIcon div::after {
+  margin-top: 0.5rem;
 }
-#menuIcon div::before{
-    margin-top:-0.5rem;
+#menuIcon div::before {
+  margin-top: -0.5rem;
 }
-#menuIcon.expand div{
-    background-color: transparent;
+#menuIcon.expand div {
+  background-color: transparent;
 }
 #menuIcon.expand div::before,
-#menuIcon.expand div::after{
-    background-color: $primaryColor;
-    margin-top:0;
+#menuIcon.expand div::after {
+  background-color: $primaryColor;
+  margin-top: 0;
 }
-#menuIcon.expand div:after{
-    transform: rotate(45deg);
-    
+#menuIcon.expand div:after {
+  transform: rotate(45deg);
 }
-#menuIcon.expand div::before{
-    transform: rotate(-45deg);
+#menuIcon.expand div::before {
+  transform: rotate(-45deg);
 }
 /*=========================MENU BAR ====================*/
-.menuBar-big{
-    display: none;
+.menuBar-big {
+  display: none;
 }
 
-.menuBar-small .mainList{
-    position:fixed;
-    padding: 2rem 1rem 1rem;
-    width:90%;
-    // overflow-y: scroll;
-    left:-90%;
-    transition: 0.5s ease;
-    background-color: $secondaryColor;
-    color:white;
-    z-index: 2;
+.menuBar-small .mainList {
+  position: fixed;
+  padding: 2rem 1rem 1rem;
+  width: 90%;
+  overflow-y: scroll;
+  left: -90%;
+  transition: 0.5s ease;
+  height: 100vh;
+  background-color: $secondaryColor;
+  color: white;
+  z-index: 2;
 }
-.menuBar-big .mainList a{
-    text-decoration: none;
-    color:$secondaryColor;
+.menuBar-small .mainList::-webkit-scrollbar {
+  width: 2px;
 }
-.menuBar-small .mainList a{
-    text-decoration: none;
-    color:white;
+.menuBar-big .mainList a {
+  text-decoration: none;
+  color: $secondaryColor;
 }
-.mainList li{
-    padding: .3rem;
+.menuBar-small .mainList a {
+  text-decoration: none;
+  color: white;
 }
-.menuBar-small .mainList.expand{
-    left:0;
+.mainList li {
+  padding: 0.3rem;
 }
-.classesIcon{
-    margin-left: 5%;
-    cursor: pointer;
-    color: white;
-    font-size: 1rem;
-    transition: .3s ease-in-out;
+.menuBar-small .mainList.expand {
+  left: 0;
 }
-.classesIcon.expand{
-    transform: rotate(180deg);
+.classesIcon {
+  margin-left: 5%;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
 }
-.classesMenu{
-    overflow: hidden;
-    height: 0;
-    transition: 1s ease;
-    margin-top: .5rem;    
-    margin-left:2%;
-    background-color: lighten($secondaryColor, 3%);
+.classesIcon.expand {
+  transform: rotate(180deg);
 }
-.classesMenu.expand{
-    overflow: visible;
-    height: 100%;    
+.classesMenu {
+  overflow: hidden;
+  height: 0;
+  transition: 1s ease;
+  margin-top: 0.5rem;
+  margin-left: 2%;
+  background-color: lighten($secondaryColor, 3%);
+}
+.classesMenu.expand {
+  overflow: visible;
+  height: 100%;
 }
 /*====================BANNER=====================*/
-.banner{
-   height: 300px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-   
+.banner {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.greeting{
-    position: absolute;
-    width: 90%;
-    top:300px;
-    left: -500px;
-    color:white;
-    border-radius: 15px 0 15px 0;
-    transform: translate(-10%,-50%);
-    background-color: rgba($color: $primaryColor, $alpha: .9);
-    padding:.5rem;
-    animation: flyIn 2s cubic-bezier(.5,.5,0,1) forwards;
-    box-shadow: 3px 3px 3px rgba(gray, 0.8);
+.greeting {
+  position: absolute;
+  width: 90%;
+  top: 300px;
+  left: -500px;
+  color: white;
+  border-radius: 15px 0 15px 0;
+  transform: translate(-10%, -50%);
+  background-color: rgba($color: $primaryColor, $alpha: 0.9);
+  padding: 0.5rem;
+  animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
+  box-shadow: 3px 3px 3px rgba(gray, 0.8);
 }
-@keyframes flyIn{
-    100%{left:15%;}
+@keyframes flyIn {
+  100% {
+    left: 15%;
+  }
 }
-.banner .greeting h1{
-    font-size: 1.7rem;
+.banner .greeting h1 {
+  font-size: 1.7rem;
 }
-.banner::after{
-    content: '';
-    background-image: url('../images/mainBanner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: -2;
-    animation-name: zoomIn;
-    animation-delay: 10ms;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    
+.banner::after {
+  content: "";
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  animation-name: zoomIn;
+  animation-delay: 10ms;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes zoomIn{
-    0%{transform: scale(1)}
-    100%{transform: scale(1.5)}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 /*==================content============*/
-.content{
-    margin: 3rem auto;
-    width:90%;
-    color: $secondaryColor;
-    font-size:1.1rem;
+.content {
+  margin: 3rem auto;
+  width: 90%;
+  color: $secondaryColor;
+  font-size: 1.1rem;
 }
-.content figure img{
-    width:100%;
+.content figure img {
+  width: 100%;
 }
-.content h1{
-    width:80%;
-    color: $primaryColor;
-    font-size: 1.5rem;
-    text-align: right;
-    text-align: center;
-    margin:1rem auto;
-    letter-spacing: .1rem;
-    display: inline-block;
-    padding: .5rem;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: $secondaryColor;
-    border-bottom-width: 2px;
-    
+.content h1 {
+  width: 80%;
+  color: $primaryColor;
+  font-size: 1.5rem;
+  text-align: right;
+  text-align: center;
+  margin: 1rem auto;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 0.5rem;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: $secondaryColor;
+  border-bottom-width: 2px;
 }
-.content div{
-    text-align: center;
-    margin: 1rem auto;
+.content div {
+  text-align: center;
+  margin: 1rem auto;
 }
-.content div p{
-    margin: .5rem 0;
+.content div p {
+  margin: 0.5rem 0;
 }
-.aboutUs{
-    margin-top:50px;
+.aboutUs {
+  margin-top: 50px;
 }
-.aboutUs div{
-    margin-top: 0;
+.aboutUs div {
+  margin-top: 0;
 }
-.founder figure{
-    width:80%;
-    margin: 1rem auto;
+.founder figure {
+  width: 80%;
+  margin: 1rem auto;
 }
 
-.founder img{
-    border-radius:50%;
-    border: 2px dashed $primaryColor;
+.founder img {
+  border-radius: 50%;
+  border: 2px dashed $primaryColor;
 }
-.crowdFunding{
-    width:95%;
-    margin: 1rem auto;
-    background-color: $primaryColor;
-    color:white;
-    padding:.5rem;
-    text-align: center;
+.crowdFunding {
+  width: 95%;
+  margin: 3rem auto 0;
+  background-color: $primaryColor;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
 }
-.crowdFunding a{
-    color: white;
+.crowdFunding a {
+  color: white;
 }
 /*=================CLASSES============*/
-.classes .lesson{
-    width: 90%;
-    // background-color: coral;
-    margin: 1rem auto 3rem auto;
+.classes {
+  ul.timeTable {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .timeTable li {
+    list-style: none;
+  }
 }
-.lesson figure{
-    width:100%;
+.classes .lesson {
+  width: 90%;
+  // background-color: coral;
+  margin: 1rem auto 3rem auto;
 }
-.lesson figure img{
-    width: 100%;
+.lesson-img-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
-.classes .lesson h3{    
-    font-size:1.5rem;
-    padding-bottom: 1rem;
-    letter-spacing: .2rem;
-    color: #ec2b48;;
+.lesson figure img {
+  width: 100%;
 }
-.classes .lesson a{
-    color: #ec2b48;
-    text-decoration: none;
+.classes .lesson h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+  // letter-spacing: 0.2rem;
+  color: #ec2b48;
+}
+.classes .lesson a {
+  color: #ec2b48;
+  text-decoration: none;
 }
 /*==================CONTACT============*/
-.contact div{
-    margin: 1rem auto;
+.contact div {
+  margin: 1rem auto;
 }
-.contact div h3{
-    font-size: 1.3rem;
-    padding: .5rem 0 1rem;
-    color:purple;
+.contact div h3 {
+  font-size: 1.3rem;
+  padding: 0.5rem 0 1rem;
+  color: purple;
 }
-.contact .media ul{
-    widows: 80%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.contact .media ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.contact .media ul a{
-    text-decoration: none;
-    color:$secondaryColor;
+.contact .media ul a {
+  text-decoration: none;
+  color: $secondaryColor;
 }
-.contact ul li{
-    list-style: none;
+.contact ul li {
+  list-style: none;
 }
 
-.contact .media ul li i{
-    font-size: 2rem;
+.contact .media ul li i {
+  font-size: 2rem;
 }
-#map{
-   height: 300px;;
+#map {
+  height: 300px;
 }
 /*------------------Footer---------------*/
-footer{
-    margin-left: 2%;
-    font-size: .8rem;
-    ul li{
-        list-style: none;
-    }
-    .developer{
-        font-size: .7rem;
-        color: silver;
-    }
+footer {
+  margin-left: 2%;
+  font-size: 0.8rem;
+  ul li {
+    list-style: none;
+  }
+  .developer {
+    font-size: 0.7rem;
+    color: silver;
+  }
 }
 /*=================ABOUT US PAGE=================*/
-.aboutUs ul li{
+.aboutUs ul li {
+  list-style: none;
+}
+.aboutUs h3,
+.events h3 {
+  color: $primaryColor;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.aboutUs .purposes ul li {
+  text-align: left;
+  margin: 0.5rem 0 0.5rem;
+}
+.aboutUs .purposes ul li::before {
+  content: "\f559";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: $primaryColor;
+  font-size: 1.2rem;
+  padding-right: 4%;
+}
+.aboutUs .open-time p {
+  text-align: left;
+}
+.aboutUs .open-time p i {
+  margin-right: 1rem;
+  color: $primaryColor;
+}
+.partnerships ul li {
+  position: relative;
+  margin: 1rem auto;
+}
+.partnerships figure {
+  width: 50%;
+  margin: 0.5rem auto;
+}
+.partnerships figcaption {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 180%;
+  transform: translate(0, -50%);
+  background-color: #949cd3d8;
+  border-radius: 20px;
+  padding: 0.3rem;
+  color: white;
+  animation: flyRight;
+  animation-duration: 0.9s;
+  animation-fill-mode: both;
+}
+@keyframes flyRight {
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+// .event-container {
+//   display: grid;
+//   width: 90%;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: auto auto;
+//   border: 1px solid rgb(179, 179, 179);
+//   margin: 0 auto;
+//   padding: 0.5rem 0;
+//   color: $secondaryColor;
+// }
+// .event-date {
+//   grid-column: 1 / span 1;
+//   grid-row: 1 / span 1;
+// }
+// .event-content {
+//   grid-column: 2 / span 2;
+//   grid-row: 1 / span 1;
+// }
+// .event-detail {
+//   grid-column: 1 / span 3;
+//   grid-row: 2 / span 1;
+// }
+// .event-date,
+// .event-content {
+//   align-self: center; //vertically center the element in the grid
+//   // justify-self: center;//horizontally center the element in the grid
+// }
+// .event-date li {
+//   list-style: none;
+//   text-align: center;
+// }
+// .event-date li:nth-child(1) {
+//   font-size: 1.5rem;
+//   color: $primaryColor;
+// }
+// .event-content {
+//   text-align: center;
+//   position: relative;
+// }
+// .event-content h1 {
+//   width: 80%;
+//   margin: 0 10% 0 2%;
+// }
+// .event-content .event-read-btn {
+//   position: absolute;
+//   top: 0;
+//   right: 2%;
+//   transform: translate(2%, 0);
+//   cursor: pointer;
+// }
+.event-name .event-read-btn {
+  font-size: 1.5rem;
+
+  transition: 0.2s ease-in-out;
+}
+.event-name .event-read-btn.rotate {
+  transform: rotate(180deg);
+}
+.event-container .event-detail {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.event-container .event-detail.expand {
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.event-container .event-detail div {
+  width: 90%;
+  margin: 0.3rem auto;
+  text-align: center;
+  font-size: 0.85rem;
+  border-top: 1px dashed;
+  padding-top: 0.2rem;
+}
+.event-list .event-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "date name name" "info info info";
+  align-items: center;
+  border-top: 1px solid #d3d3d3;
+  padding-top: 1rem;
+}
+.event-list .event-date {
+  grid-area: date;
+  li {
     list-style: none;
+  }
 }
-.aboutUs h3, .events h3{
-    color: $primaryColor;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 2rem auto .5rem auto;
+.event-list .event-name {
+  grid-area: name;
+  font-size: 1.2rem;
+  color: $primaryColor;
 }
-.aboutUs .purposes ul li{
-    text-align: left;
-    margin: .5rem 0 .5rem 1rem;
+.event-list .event-detail {
+  grid-area: info;
 }
-.aboutUs .purposes ul li::before{
-    content: "\f559";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: $primaryColor;
-    font-size: 1.2rem;
-    padding-right: 4%;
+.event-list .event-read-btn {
+  margin-left: 1rem;
 }
-.partnerships ul li{
-    position: relative;
+/*========================TESTIMONIALS===============*/
+.review-wrapper {
+  margin: 1rem auto;
+  border: 1px solid #d3d3d3;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(187, 186, 186, 0.8);
 }
-.partnerships figure{
-    width:50%;
-    margin:.5rem auto;
+.reviewer-info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
 }
-.partnerships figcaption{
-    position: absolute;
-    width: 80%;
-    top:50%;
-    left:180%;
-    transform: translate(0,-50%);
-    background-color: #949cd3d8;
-    border-radius: 20px;
-    padding:.3rem;
-    color: white;
-    animation: flyRight;
-    animation-duration: .9s;
-    animation-fill-mode: both;
-   
+.reviewer-name {
+  font-size: 1.5rem;
+  justify-self: start;
 }
-@keyframes flyRight{
-    100%{
-        left:50%;
-        transform: translateX(-50%);
-    }
+.reviewer-img {
+  width: 50%;
+  justify-self: center;
 }
-.event-container {
-    display: grid;
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    border: 1px solid rgb(179, 179, 179);
-    margin: 0 auto;
-    padding: .5rem 0;
-    color:$secondaryColor;
+.reviewer-img img {
+  width: 100%;
 }
-.event-date {
-    grid-column: 1/ span 1;
-    grid-row: 1 / span 1;
-}
-.event-content{
-    grid-column: 2/ span 2;
-    grid-row: 1 / span 1;
-}
-.event-detail{
-    grid-column: 1/ span 3;
-    grid-row: 2 / span 1;
-}
-.event-date, .event-content{
-    align-self: center;//vertically center the element in the grid
-    // justify-self: center;//horizontally center the element in the grid
-}
-.event-date li{
-    list-style: none;
-    text-align: center;
-}
-.event-date li:nth-child(1){
-    font-size: 1.5rem;
-    color: $primaryColor;
-}
-.event-content{
-    text-align: center;
-    position: relative;
-}
-.event-content h1{
-    width: 80%;
-    margin: 0 10% 0 2%;
-}
-.event-content .event-read-btn{
-    position: absolute;
-    top:0;
-    right: 2%;
-    transform: translate(2%,0);
-    cursor: pointer;
-}
-.event-content .event-read-btn i{
-    z-index: 2;
-    font-size: 1.5rem;
-    padding: 0 .5rem;
-    transition: .2s ease-in-out;
-    color: $primaryColor;
-}
-.event-content .event-read-btn i.rotate{
-    transform: rotate(180deg);
-}
-.event-container .event-detail{
-    overflow: hidden;
-    height: 0;
-    transition: height .5s cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-.event-container .event-detail.expand{
-    height: 100%;
-}
-.event-container .event-detail div{
-    width: 90%;
-    margin: .3rem auto;
-    text-align: center;
-    font-size: .85rem;
-    border-top: 1px dashed;
-    padding-top: .2rem;
+#testimonials-list .review-msg {
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
 }

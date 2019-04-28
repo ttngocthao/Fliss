@@ -1,52 +1,73 @@
-.content{
-    color: yellowgreen;
+.content {
+  color: black;
 }
-.menuBar-small{
-    display: none;
+.menuBar-small {
+  display: none;
 }
-#menuIcon{
-    display:none;
+#menuIcon {
+  display: none;
 }
-.menuBar-big{
-    display: block;
-    position: fixed;
-    z-index: 2;
+.menuBar-big {
+  display: block;
+  position: fixed;
+  z-index: 2;
 }
 .menuBar-big .mainList {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.8);
-    color:$secondaryColor;
-    height: 2rem;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: $secondaryColor;
+  height: 2rem;
 }
-.menuBar-big .mainList #classes{
-    width: 5rem;
+.menuBar-big .mainList #classes {
+  width: 5rem;
 }
-.menuBar-big .classesIcon{
-    color: $primaryColor;
+.menuBar-big .classesIcon {
+  color: $primaryColor;
 }
-.menuBar-big .classesMenu{
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 10rem;
-    
+.menuBar-big .classesMenu {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 10rem;
 }
-.menuBar-big .classesMenu.expand{
-    height: 13rem;
+.menuBar-big .classesMenu.expand {
+  height: 13rem;
 }
 // .menuBar-big .classesMenu li{
 //     width:10rem;
 // }
-.content h1{
-    width: 40%;
+.crowdFunding {
+  width: 70%;
+  padding: 1rem;
 }
-.founder figure{
-    min-width: 50%;
-    max-width:60%;
-    margin: 1rem 0;
+.content h1 {
+  width: 40%;
 }
-.classes .wrapper{
-    grid-template-columns: repeat(3,1fr)
+.home .founder .wrapper div {
+  padding: 0.5rem;
 }
-footer .developer{
-    text-align: right;
-    margin-right: 2%;
+.home .founder figure {
+  min-width: 50%;
+  max-width: 60%;
+  margin: 1rem 0;
+}
+.content.aboutUs {
+  width: 80%;
+  margin: 0 auto;
+}
+.classes .wrapper {
+  grid-template-columns: repeat(3, 1fr);
+}
+.lesson-img-wrapper {
+  width: 60%;
+}
+footer .developer {
+  text-align: right;
+  margin-right: 2%;
+}
+.founder .founder-wrapper .img-wrapper {
+  width: 20%;
+}
+
+.review-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }

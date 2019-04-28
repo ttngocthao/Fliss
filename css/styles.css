@@ -106,7 +106,7 @@ body {
 /*=============== HEADER ===============*/
 .logo {
   position: fixed;
-  top: .5rem;
+  top: 0.5rem;
   right: 2%;
   width: 15%;
   z-index: 5; }
@@ -160,11 +160,20 @@ body {
     width: 80px;
     height: 80px; } }
 #menuIcon span.expand {
-  background-color: transparent; }
+  background-color: transparent;
+  animation: none; }
 
-#menuIcon div, #menuIcon div::before, #menuIcon div::after {
+#menuIcon.expand .wrapper {
+  background-color: #4b59b6;
+  width: 12rem;
+  padding-top: 2rem;
+  border-radius: 0; }
+
+#menuIcon div,
+#menuIcon div::before,
+#menuIcon div::after {
   width: 1.6rem;
-  height: .2rem;
+  height: 0.2rem;
   background-color: #ad1d33;
   z-index: 5;
   border-radius: 5px;
@@ -173,7 +182,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  content: '';
+  content: "";
   transition: all 0.5s ease; }
 
 #menuIcon div::after {
@@ -204,11 +213,16 @@ body {
   position: fixed;
   padding: 2rem 1rem 1rem;
   width: 90%;
+  overflow-y: scroll;
   left: -90%;
   transition: 0.5s ease;
+  height: 100vh;
   background-color: #4b59b6;
   color: white;
   z-index: 2; }
+
+.menuBar-small .mainList::-webkit-scrollbar {
+  width: 2px; }
 
 .menuBar-big .mainList a {
   text-decoration: none;
@@ -219,7 +233,7 @@ body {
   color: white; }
 
 .mainList li {
-  padding: .3rem; }
+  padding: 0.3rem; }
 
 .menuBar-small .mainList.expand {
   left: 0; }
@@ -229,7 +243,7 @@ body {
   cursor: pointer;
   color: white;
   font-size: 1rem;
-  transition: .3s ease-in-out; }
+  transition: 0.3s ease-in-out; }
 
 .classesIcon.expand {
   transform: rotate(180deg); }
@@ -238,7 +252,7 @@ body {
   overflow: hidden;
   height: 0;
   transition: 1s ease;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-left: 2%;
   background-color: #5663ba; }
 
@@ -262,7 +276,7 @@ body {
   border-radius: 15px 0 15px 0;
   transform: translate(-10%, -50%);
   background-color: rgba(173, 29, 51, 0.9);
-  padding: .5rem;
+  padding: 0.5rem;
   animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
   box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.8); }
 
@@ -273,10 +287,11 @@ body {
   font-size: 1.7rem; }
 
 .banner::after {
-  content: '';
-  background-image: url("../images/mainBanner.jpg");
+  content: "";
+  background-image: url("../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -310,9 +325,9 @@ body {
   text-align: right;
   text-align: center;
   margin: 1rem auto;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   display: inline-block;
-  padding: .5rem;
+  padding: 0.5rem;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-style: solid;
@@ -324,7 +339,7 @@ body {
   margin: 1rem auto; }
 
 .content div p {
-  margin: .5rem 0; }
+  margin: 0.5rem 0; }
 
 .aboutUs {
   margin-top: 50px; }
@@ -342,30 +357,38 @@ body {
 
 .crowdFunding {
   width: 95%;
-  margin: 1rem auto;
+  margin: 3rem auto 0;
   background-color: #ad1d33;
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center; }
 
 .crowdFunding a {
   color: white; }
 
 /*=================CLASSES============*/
+.classes ul.timeTable {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+.classes .timeTable li {
+  list-style: none; }
+
 .classes .lesson {
   width: 90%;
   margin: 1rem auto 3rem auto; }
 
-.lesson figure {
-  width: 100%; }
+.lesson-img-wrapper {
+  width: 80%;
+  margin: 0 auto; }
 
 .lesson figure img {
   width: 100%; }
 
 .classes .lesson h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 1rem;
-  letter-spacing: .2rem;
+  margin-top: 0.5rem;
   color: #ec2b48; }
 
 .classes .lesson a {
@@ -378,13 +401,13 @@ body {
 
 .contact div h3 {
   font-size: 1.3rem;
-  padding: .5rem 0 1rem;
+  padding: 0.5rem 0 1rem;
   color: purple; }
 
 .contact .media ul {
-  widows: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
 .contact .media ul a {
   text-decoration: none;
@@ -402,26 +425,27 @@ body {
 /*------------------Footer---------------*/
 footer {
   margin-left: 2%;
-  font-size: .8rem; }
+  font-size: 0.8rem; }
   footer ul li {
     list-style: none; }
   footer .developer {
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: silver; }
 
 /*=================ABOUT US PAGE=================*/
 .aboutUs ul li {
   list-style: none; }
 
-.aboutUs h3, .events h3 {
+.aboutUs h3,
+.events h3 {
   color: #ad1d33;
   font-size: 1.3rem;
   text-align: center;
-  margin: 2rem auto .5rem auto; }
+  margin: 2rem auto 0.5rem auto; }
 
 .aboutUs .purposes ul li {
   text-align: left;
-  margin: .5rem 0 .5rem 1rem; }
+  margin: 0.5rem 0 0.5rem; }
 
 .aboutUs .purposes ul li::before {
   content: "\f559";
@@ -431,12 +455,20 @@ footer {
   font-size: 1.2rem;
   padding-right: 4%; }
 
+.aboutUs .open-time p {
+  text-align: left; }
+
+.aboutUs .open-time p i {
+  margin-right: 1rem;
+  color: #ad1d33; }
+
 .partnerships ul li {
-  position: relative; }
+  position: relative;
+  margin: 1rem auto; }
 
 .partnerships figure {
   width: 50%;
-  margin: .5rem auto; }
+  margin: 0.5rem auto; }
 
 .partnerships figcaption {
   position: absolute;
@@ -446,72 +478,21 @@ footer {
   transform: translate(0, -50%);
   background-color: #949cd3d8;
   border-radius: 20px;
-  padding: .3rem;
+  padding: 0.3rem;
   color: white;
   animation: flyRight;
-  animation-duration: .9s;
+  animation-duration: 0.9s;
   animation-fill-mode: both; }
 
 @keyframes flyRight {
   100% {
     left: 50%;
     transform: translateX(-50%); } }
-.event-container {
-  display: grid;
-  width: 90%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  border: 1px solid #b3b3b3;
-  margin: 0 auto;
-  padding: .5rem 0;
-  color: #4b59b6; }
-
-.event-date {
-  grid-column: 1/ span 1;
-  grid-row: 1 / span 1; }
-
-.event-content {
-  grid-column: 2/ span 2;
-  grid-row: 1 / span 1; }
-
-.event-detail {
-  grid-column: 1/ span 3;
-  grid-row: 2 / span 1; }
-
-.event-date, .event-content {
-  align-self: center; }
-
-.event-date li {
-  list-style: none;
-  text-align: center; }
-
-.event-date li:nth-child(1) {
+.event-name .event-read-btn {
   font-size: 1.5rem;
-  color: #ad1d33; }
+  transition: 0.2s ease-in-out; }
 
-.event-content {
-  text-align: center;
-  position: relative; }
-
-.event-content h1 {
-  width: 80%;
-  margin: 0 10% 0 2%; }
-
-.event-content .event-read-btn {
-  position: absolute;
-  top: 0;
-  right: 2%;
-  transform: translate(2%, 0);
-  cursor: pointer; }
-
-.event-content .event-read-btn i {
-  z-index: 2;
-  font-size: 1.5rem;
-  padding: 0 .5rem;
-  transition: .2s ease-in-out;
-  color: #ad1d33; }
-
-.event-content .event-read-btn i.rotate {
+.event-name .event-read-btn.rotate {
   transform: rotate(180deg); }
 
 .event-container .event-detail {
@@ -520,15 +501,72 @@ footer {
   transition: height 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .event-container .event-detail.expand {
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 1rem; }
 
 .event-container .event-detail div {
   width: 90%;
-  margin: .3rem auto;
+  margin: 0.3rem auto;
   text-align: center;
-  font-size: .85rem;
+  font-size: 0.85rem;
   border-top: 1px dashed;
-  padding-top: .2rem; }
+  padding-top: 0.2rem; }
+
+.event-list .event-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "date name name" "info info info";
+  align-items: center;
+  border-top: 1px solid #d3d3d3;
+  padding-top: 1rem; }
+
+.event-list .event-date {
+  grid-area: date; }
+  .event-list .event-date li {
+    list-style: none; }
+
+.event-list .event-name {
+  grid-area: name;
+  font-size: 1.2rem;
+  color: #ad1d33; }
+
+.event-list .event-detail {
+  grid-area: info; }
+
+.event-list .event-read-btn {
+  margin-left: 1rem; }
+
+/*========================TESTIMONIALS===============*/
+.review-wrapper {
+  margin: 1rem auto;
+  border: 1px solid #d3d3d3;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(187, 186, 186, 0.8); }
+
+.reviewer-info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center; }
+
+.reviewer-name {
+  font-size: 1.5rem;
+  justify-self: start; }
+
+.reviewer-img {
+  width: 50%;
+  justify-self: center; }
+
+.reviewer-img img {
+  width: 100%; }
+
+#testimonials-list .review-msg {
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto; }
 
 @media only screen and (min-width: 560px) {
   .logo {
@@ -539,7 +577,7 @@ footer {
 
   .content h1 {
     font-size: 2rem;
-    letter-spacing: .2rem; }
+    letter-spacing: 0.2rem; }
 
   .banner {
     min-height: 400px;
@@ -555,14 +593,22 @@ footer {
   .greeting h3 {
     font-size: 1.5rem; }
 
-  .founder .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center; }
+  .crowdFunding {
+    width: 80%; }
 
-  .founder figure {
+  .founder .crowdFunding {
+    margin-bottom: 2rem; }
+
+  .home .founder .wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center; }
+
+  .home .founder figure {
     min-width: 60%;
-    max-width: 70%; }
+    max-width: 70%;
+    justify-self: center; }
 
   .classes .lesson h3 {
     letter-spacing: 0;
@@ -572,16 +618,62 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
 
+  .lesson-img-wrapper {
+    width: 70%; }
+
   footer ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   footer ul li:nth-child(2) {
     margin-right: 2%;
-    text-align: right; } }
+    text-align: right; }
+
+  /*ABOUT HTML*/
+  .partnerships-img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center; }
+
+  .aboutUs .open-time {
+    margin-left: 1rem; }
+
+  .aboutUs .open-time {
+    width: 80%;
+    margin: 0 auto; }
+
+  .aboutUs .purposes ul {
+    width: 80%;
+    margin: 0 auto; }
+
+  /*FOUNDER PAGE*/
+  .founder .founder-wrapper {
+    position: relative; }
+
+  .founder .founder-wrapper .img-wrapper {
+    float: left;
+    top: 0;
+    left: 0;
+    width: 30%;
+    margin: 1rem; }
+
+  .founder .founder-wrapper .founder-history {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left; }
+    .founder .founder-wrapper .founder-history p {
+      padding: 0.5rem; }
+
+  .review-wrapper {
+    display: grid;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 30% 70%;
+    align-items: start; } }
 /*end media query*/
 @media only screen and (min-width: 1140px) {
   .content {
-    color: yellowgreen; }
+    color: black; }
 
   .menuBar-small {
     display: none; }
@@ -613,18 +705,39 @@ footer {
   .menuBar-big .classesMenu.expand {
     height: 13rem; }
 
+  .crowdFunding {
+    width: 70%;
+    padding: 1rem; }
+
   .content h1 {
     width: 40%; }
 
-  .founder figure {
+  .home .founder .wrapper div {
+    padding: 0.5rem; }
+
+  .home .founder figure {
     min-width: 50%;
     max-width: 60%;
     margin: 1rem 0; }
 
+  .content.aboutUs {
+    width: 80%;
+    margin: 0 auto; }
+
   .classes .wrapper {
     grid-template-columns: repeat(3, 1fr); }
 
+  .lesson-img-wrapper {
+    width: 60%; }
+
   footer .developer {
     text-align: right;
-    margin-right: 2%; } }
+    margin-right: 2%; }
+
+  .founder .founder-wrapper .img-wrapper {
+    width: 20%; }
+
+  .review-wrapper {
+    width: 80%;
+    margin: 0 auto; } }
 /*end media query*/
