@@ -43,14 +43,14 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li>
           Classes <i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
             <a href="streetDancing.html"><li>Street Dancing</li></a>
             <a href="drama.html"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
-            <a href="singing.html"><li>Singing</li></a>
+            <a href="singing.html" class="actived"><li>Singing</li></a>
             <a href="sport.html"><li>Sport Coaching</li></a>
             <a href="boxing.html"><li>Non Contact Boxing</li></a>
           </ul>
@@ -65,14 +65,14 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li id="classes">
           Classes<i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
             <a href="streetDancing.html"><li>Street Dancing</li></a>
             <a href="drama.html"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
-            <a href="singing.html"><li>Singing</li></a>
+            <a href="singing.html" class="actived"><li>Singing</li></a>
             <a href="sport.html"><li>Sport Coaching</li></a>
             <a href="boxing.html"><li>Non Contact Boxing</li></a>
           </ul>
@@ -82,30 +82,57 @@
     </nav>
     <!--Page content goes here-->
     <main>
-      <!--Banner-->
-      <section>
-        <div class="banner"></div>
-        <!-- <div class="greeting">
-          <h3>Welcome to</h3>
-          <h1>Fliss Fame Academy</h1>
-        </div> -->
-      </section>
-      <!--Crowd Funding-->
-      <section class="crowdFunding">
+      <section class="content class-page">
         <div>
-          We are raising £1,000 towards a years rent on a space, to continue
-          supporting hundreds of deprived children in our local community.
-        </div>
-        <a href="https://www.justgiving.com/crowdfunding/justhelpingus"
-          >Please give what you can here</a
-        >
-      </section>
+          <h1>Singing Class</h1>
 
-      <!--TESTIMONIALS-->
-      <section class="content ">
-        <div>
-          <h1>Testimonials</h1>
-          <div id="testimonials-list"></div>
+          <ul class="timeTable">
+            <li><i class="far fa-clock"></i></li>
+            <li>Tue</li>
+            <li>5:00pm - 6:00pm</li>
+          </ul>
+
+          <div class="class-info">
+            <p>
+              Singing is the act of producing musical sounds with the voice and
+              augments regular speech by the use of both tonality and rhythm.
+              Singing is a fun and very effective way to help us build up their
+              confidence and self esteem.
+            </p>
+          </div>
+
+          <div class="teacher-profile">
+            <figure class="teacher-pic">
+              <img src="/images/teacher-icon.png" />
+            </figure>
+            <div class="teacher-intro">
+              <h4>Singing teacher</h4>
+              <p>
+                I’m Rosie Holloway, a dedicated singing, piano, guitar and
+                songwriting teacher with 7 years of experience, and a lifetime
+                of performances under my belt. I began to play instruments when
+                I was 4 and come from a musical family.
+              </p>
+              <p>
+                I believe every child is musical and just needs the right
+                environment to bring out their confidence, inner creativity and
+                help them to express themselves which I believe is pivotal to
+                healthy development and sets them up for life. There is nothing
+                I love more than helping with this.
+              </p>
+              <p>
+                I will be teaching singing on Monday’s, and encouraging them to
+                not only sing but write their own melodies and words, which, in
+                my experience, is always the most rewarding for them.
+              </p>
+            </div>
+          </div>
+
+          <div class="img-gallery">
+            <h4>Gallery</h4>
+            <div id="singing-gallery"></div>
+            <div id="view-individual"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -116,15 +143,14 @@
         <li>© 2018 FLISS FAME ACADEMY</li>
         <li>Stowe Centre, 258 Harrow Rd, London W2 5ES</li>
       </ul>
-      <p class="developer">
+      <!-- <p class="developer">
         Website is developed by
         <a href="https://www.thaotruong.uk">Thao Truong</a>
-      </p>
+      </p> -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/menubar.js"></script>
-    <script src="scripts/reviews.js"></script>
-    <!-- <script src="scripts/eventToggle.js"></script> -->
+    <script src="scripts/gallery.js"></script>
     <!--GoogleMap-->
     <!-- <script src="scripts/googleMap.js"></script>
     <script
@@ -132,5 +158,6 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLRtT-NRCuIVAsiJ40m1iCwHxMOBfR5Cs&callback=initMap"
     ></script> -->
+    <!-- <script src="scripts/eventToggle.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,68 @@
+[
+  {
+    "albumName": "artDesign",
+    "photoUrls": [
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg"
+    ]
+  },
+  {
+    "albumName": "boxing",
+    "photoUrls": [
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg"
+    ]
+  },
+  {
+    "albumName": "drama",
+    "photoUrls": [
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg"
+    ]
+  },
+  {
+    "albumName": "singing",
+    "photoUrls": [
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg"
+    ]
+  },
+  {
+    "albumName": "sport",
+    "photoUrls": [
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg"
+    ]
+  },
+  {
+    "albumName": "streetDancing",
+    "photoUrls": [
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg",
+      "./images/banner.jpg"
+    ]
+  }
+]

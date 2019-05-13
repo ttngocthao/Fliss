@@ -8,7 +8,9 @@ xhr.onload = function() {
     // console.log(eventData);
     for (let i = 0; i < eventData.length; i++) {
       // console.log(eventData[i]);
-      eventList.innerHTML += eventTemp(eventData[i]);
+      if (eventList !== null) {
+        eventList.innerHTML += eventTemp(eventData[i]);
+      }
     }
   } else {
     console.log("Error", xhr.statusText);

@@ -43,12 +43,12 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li>
           Classes <i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
             <a href="streetDancing.html"><li>Street Dancing</li></a>
-            <a href="drama.html"><li>Drama</li></a>
+            <a href="drama.html" class="actived"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
             <a href="singing.html"><li>Singing</li></a>
             <a href="sport.html"><li>Sport Coaching</li></a>
@@ -65,12 +65,12 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li id="classes">
           Classes<i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
             <a href="streetDancing.html"><li>Street Dancing</li></a>
-            <a href="drama.html"><li>Drama</li></a>
+            <a href="drama.html" class="actived"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
             <a href="singing.html"><li>Singing</li></a>
             <a href="sport.html"><li>Sport Coaching</li></a>
@@ -82,30 +82,52 @@
     </nav>
     <!--Page content goes here-->
     <main>
-      <!--Banner-->
-      <section>
-        <div class="banner"></div>
-        <!-- <div class="greeting">
-          <h3>Welcome to</h3>
-          <h1>Fliss Fame Academy</h1>
-        </div> -->
-      </section>
-      <!--Crowd Funding-->
-      <section class="crowdFunding">
+      <section class="content class-page">
         <div>
-          We are raising £1,000 towards a years rent on a space, to continue
-          supporting hundreds of deprived children in our local community.
-        </div>
-        <a href="https://www.justgiving.com/crowdfunding/justhelpingus"
-          >Please give what you can here</a
-        >
-      </section>
+          <h1>Drama Class</h1>
 
-      <!--TESTIMONIALS-->
-      <section class="content ">
-        <div>
-          <h1>Testimonials</h1>
-          <div id="testimonials-list"></div>
+          <ul class="timeTable">
+            <li><i class="far fa-clock"></i></li>
+            <li>Tue</li>
+            <li>4:00pm - 5:00pm</li>
+          </ul>
+
+          <div class="class-info">
+            <p>
+              Drama is a discrete skill in itself (acting, theatre, refined
+              skill) and therefore it is offered as a ‘subject’ in secondary
+              school.
+            </p>
+            <p>
+              However Drama is also a tool which is flexible, versatile and
+              applicable among a areas of curriculum.
+            </p>
+          </div>
+
+          <div class="teacher-profile">
+            <figure class="teacher-pic">
+              <img src="/images/teacher-icon.png" />
+            </figure>
+            <div class="teacher-intro">
+              <h4>Drama Teacher</h4>
+              <p>
+                I'm Shanice Richards. I Study Drama and Theatre Arts at St
+                Mary’s Univeristy. In my classes you will learn how to Control
+                your body and use your voice on stage. Work as part of a team.
+                Create a fun and loving space to make new friends, to be
+                confident, to enhance public speaking skills and to create and
+                perform different types of characters and learn how to write
+                plays and develop learning our acting skills through creating
+                live plays for the end of term shows.
+              </p>
+            </div>
+          </div>
+
+          <div class="img-gallery">
+            <h4>Gallery</h4>
+            <div id="drama-gallery"></div>
+            <div id="view-individual"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -116,15 +138,14 @@
         <li>© 2018 FLISS FAME ACADEMY</li>
         <li>Stowe Centre, 258 Harrow Rd, London W2 5ES</li>
       </ul>
-      <p class="developer">
+      <!-- <p class="developer">
         Website is developed by
         <a href="https://www.thaotruong.uk">Thao Truong</a>
-      </p>
+      </p> -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/menubar.js"></script>
-    <script src="scripts/reviews.js"></script>
-    <!-- <script src="scripts/eventToggle.js"></script> -->
+    <script src="scripts/gallery.js"></script>
     <!--GoogleMap-->
     <!-- <script src="scripts/googleMap.js"></script>
     <script
@@ -132,5 +153,6 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLRtT-NRCuIVAsiJ40m1iCwHxMOBfR5Cs&callback=initMap"
     ></script> -->
+    <!-- <script src="scripts/eventToggle.js"></script> -->
   </body>
 </html>

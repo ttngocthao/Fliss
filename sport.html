@@ -43,7 +43,7 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li>
           Classes <i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
@@ -51,7 +51,7 @@
             <a href="drama.html"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
             <a href="singing.html"><li>Singing</li></a>
-            <a href="sport.html"><li>Sport Coaching</li></a>
+            <a href="sport.html" class="actived"><li>Sport Coaching</li></a>
             <a href="boxing.html"><li>Non Contact Boxing</li></a>
           </ul>
         </li>
@@ -65,7 +65,7 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li id="classes">
           Classes<i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
@@ -73,7 +73,7 @@
             <a href="drama.html"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
             <a href="singing.html"><li>Singing</li></a>
-            <a href="sport.html"><li>Sport Coaching</li></a>
+            <a href="sport.html" class="actived"><li>Sport Coaching</li></a>
             <a href="boxing.html"><li>Non Contact Boxing</li></a>
           </ul>
         </li>
@@ -82,30 +82,57 @@
     </nav>
     <!--Page content goes here-->
     <main>
-      <!--Banner-->
-      <section>
-        <div class="banner"></div>
-        <!-- <div class="greeting">
-          <h3>Welcome to</h3>
-          <h1>Fliss Fame Academy</h1>
-        </div> -->
-      </section>
-      <!--Crowd Funding-->
-      <section class="crowdFunding">
+      <section class="content class-page">
         <div>
-          We are raising £1,000 towards a years rent on a space, to continue
-          supporting hundreds of deprived children in our local community.
-        </div>
-        <a href="https://www.justgiving.com/crowdfunding/justhelpingus"
-          >Please give what you can here</a
-        >
-      </section>
+          <h1>Sport Coaching</h1>
 
-      <!--TESTIMONIALS-->
-      <section class="content ">
-        <div>
-          <h1>Testimonials</h1>
-          <div id="testimonials-list"></div>
+          <ul class="timeTable">
+            <li><i class="far fa-clock"></i></li>
+            <li>Wed</li>
+            <li>4:00pm - 5:15pm</li>
+          </ul>
+
+          <div class="class-info">
+            <p>
+              Fliss Fame Academy’s Sport sessions were created to support our
+              young people.
+            </p>
+            <p>
+              It will help them to build up their confidence, self esteem,
+              overcome shyness, improve mental, emotional and physical fitness.
+            </p>
+            <p>
+              We give constructive high level teaching of different sports ,
+              which include drills ,fitness training , understanding of what’s
+              needed to progress into the next level ,the most important part is
+              it fun , kids interacting with other kids making new friends
+              bringing back the community bases that we grew up on
+            </p>
+          </div>
+
+          <div class="teacher-profile">
+            <figure class="teacher-pic">
+              <img src="/images/teacher-icon.png" />
+            </figure>
+            <div class="teacher-intro">
+              <h4>Sport Coach</h4>
+              <p>
+                Geoffrey adusei I have Over 20 years experience teaching all
+                levels of sport and my Aim has always been to give back to the
+                community helping young people stimulate their minds and body’s
+                and improve their life skills . I create this space by Teaching
+                Cricket Football Basketball Badminton Netball Hockey Level 1/2/3
+                fitness coaching and boot camps Tag rugby Sports fun and games
+                I.e rounders , dodgeball etc .
+              </p>
+            </div>
+          </div>
+
+          <div class="img-gallery">
+            <h4>Gallery</h4>
+            <div id="sport-gallery"></div>
+            <div id="view-individual"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -116,15 +143,14 @@
         <li>© 2018 FLISS FAME ACADEMY</li>
         <li>Stowe Centre, 258 Harrow Rd, London W2 5ES</li>
       </ul>
-      <p class="developer">
+      <!-- <p class="developer">
         Website is developed by
         <a href="https://www.thaotruong.uk">Thao Truong</a>
-      </p>
+      </p> -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/menubar.js"></script>
-    <script src="scripts/reviews.js"></script>
-    <!-- <script src="scripts/eventToggle.js"></script> -->
+    <script src="scripts/gallery.js"></script>
     <!--GoogleMap-->
     <!-- <script src="scripts/googleMap.js"></script>
     <script
@@ -132,5 +158,6 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLRtT-NRCuIVAsiJ40m1iCwHxMOBfR5Cs&callback=initMap"
     ></script> -->
+    <!-- <script src="scripts/eventToggle.js"></script> -->
   </body>
 </html>

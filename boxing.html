@@ -43,7 +43,7 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li>
           Classes <i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
@@ -51,7 +51,7 @@
             <a href="drama.html"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
             <a href="singing.html"><li>Singing</li></a>
-            <a href="sport.html"><li>Sport Coaching</li></a>
+            <a href="sport.html" class="actived"><li>Sport Coaching</li></a>
             <a href="boxing.html"><li>Non Contact Boxing</li></a>
           </ul>
         </li>
@@ -65,7 +65,7 @@
         <a href="about.html"><li>About Us</li></a>
         <a href="founder.html"><li>Our Founder</li></a>
         <a href="events.html"><li>Events</li></a>
-        <a href="testimonials.html" class="actived"><li>Testimonials</li></a>
+        <a href="testimonials.html"><li>Testimonials</li></a>
         <li id="classes">
           Classes<i class="fas fa-angle-double-up classesIcon"></i>
           <ul class="classesMenu">
@@ -73,7 +73,7 @@
             <a href="drama.html"><li>Drama</li></a>
             <a href="artDesign.html"><li>Art and Design</li></a>
             <a href="singing.html"><li>Singing</li></a>
-            <a href="sport.html"><li>Sport Coaching</li></a>
+            <a href="sport.html" class="actived"><li>Sport Coaching</li></a>
             <a href="boxing.html"><li>Non Contact Boxing</li></a>
           </ul>
         </li>
@@ -82,30 +82,61 @@
     </nav>
     <!--Page content goes here-->
     <main>
-      <!--Banner-->
-      <section>
-        <div class="banner"></div>
-        <!-- <div class="greeting">
-          <h3>Welcome to</h3>
-          <h1>Fliss Fame Academy</h1>
-        </div> -->
-      </section>
-      <!--Crowd Funding-->
-      <section class="crowdFunding">
+      <section class="content class-page">
         <div>
-          We are raising £1,000 towards a years rent on a space, to continue
-          supporting hundreds of deprived children in our local community.
-        </div>
-        <a href="https://www.justgiving.com/crowdfunding/justhelpingus"
-          >Please give what you can here</a
-        >
-      </section>
+          <h1>Boxing Class</h1>
 
-      <!--TESTIMONIALS-->
-      <section class="content ">
-        <div>
-          <h1>Testimonials</h1>
-          <div id="testimonials-list"></div>
+          <ul class="timeTable">
+            <li><i class="far fa-clock"></i></li>
+            <li>Mon</li>
+            <li>5:30pm - 6:30pm</li>
+          </ul>
+
+          <div class="class-info">
+            <p>
+              Non Contact Boxing lessons are a fun and exciting way to give you
+              not only a full-body workout, but also the basic skills needed in
+              footwork, combinations, and self-defense.
+            </p>
+            <p>All training will be done to music!</p>
+            <p>some instruction will go here</p>
+          </div>
+
+          <div class="teacher-profile">
+            <figure class="teacher-pic">
+              <img src="/images/teacher-icon.png" />
+            </figure>
+            <div class="teacher-intro">
+              <h4>Boxing Coach</h4>
+              <p>
+                I am Roy Coleman, a professional football and sports coach for
+                children’s schools and the fliss fame academy , with over 25
+                years experience and have won 10 bouts of boxing tournaments for
+                major charity events all across London.
+              </p>
+              <p>
+                I have trained with the best and give all my students 100percent
+                dedication. i believe all young people benefit from this amazing
+                class , which teaches them self defence , self discipline , mind
+                and body connections bringing a major awareness to their inner
+                selves , it’s fun and very effective and is a great way to keep
+                fit and healthy.
+              </p>
+              <p>
+                It’s a great way of building confidence and self esteem which I
+                believe every child needs in life. It’s a very motivating and
+                stimulating class that relieves so much stress and strain of the
+                mind and has a high impact on emotional release. I love what I
+                do and am a very passionate teacher.
+              </p>
+            </div>
+          </div>
+
+          <div class="img-gallery">
+            <h4>Gallery</h4>
+            <div id="boxing-gallery"></div>
+            <div id="view-individual"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -116,15 +147,14 @@
         <li>© 2018 FLISS FAME ACADEMY</li>
         <li>Stowe Centre, 258 Harrow Rd, London W2 5ES</li>
       </ul>
-      <p class="developer">
+      <!-- <p class="developer">
         Website is developed by
         <a href="https://www.thaotruong.uk">Thao Truong</a>
-      </p>
+      </p> -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/menubar.js"></script>
-    <script src="scripts/reviews.js"></script>
-    <!-- <script src="scripts/eventToggle.js"></script> -->
+    <script src="scripts/gallery.js"></script>
     <!--GoogleMap-->
     <!-- <script src="scripts/googleMap.js"></script>
     <script
@@ -132,5 +162,6 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLRtT-NRCuIVAsiJ40m1iCwHxMOBfR5Cs&callback=initMap"
     ></script> -->
+    <!-- <script src="scripts/eventToggle.js"></script> -->
   </body>
 </html>
