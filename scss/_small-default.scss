@@ -445,11 +445,6 @@ footer {
   }
 }
 
-.event-name .event-read-btn {
-  font-size: 1.5rem;
-
-  transition: 0.2s ease-in-out;
-}
 .event-name .event-read-btn.rotate {
   transform: rotate(180deg);
 }
@@ -461,6 +456,8 @@ footer {
 .event-container .event-detail.expand {
   height: 100%;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: left;
 }
 .event-container .event-detail div {
   width: 90%;
@@ -471,12 +468,16 @@ footer {
   padding-top: 0.2rem;
 }
 .event-list .event-container {
+  div {
+    margin: 0 auto;
+  }
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "date name name" "info info info";
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: "date name icon" "info info info";
   align-items: center;
+  grid-row-gap: 0.5rem;
   border-top: 1px solid #d3d3d3;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 .event-list .event-date {
   grid-area: date;
@@ -486,17 +487,26 @@ footer {
     text-align: center;
   }
 }
+.event-read-btn {
+  font-size: 0.9rem;
+  grid-area: icon;
+  transition: 0.2s ease-in-out;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-align: right;
+}
 .event-list .event-name {
   grid-area: name;
-  font-size: 1.2rem;
-  color: $primaryColor;
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-left: 1rem;
+  // padding-bottom: 0.5rem;
 }
+
 .event-list .event-detail {
   grid-area: info;
 }
-.event-list .event-read-btn {
-  margin-left: 1rem;
-}
+
 /*========================TESTIMONIALS===============*/
 .review-wrapper {
   margin: 1rem auto;
@@ -547,8 +557,14 @@ footer {
   }
   .class-info {
     font-size: 0.9rem;
+    figure {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
     .contact-btn {
-      text-align: center !important;
+      text-align: center;
     }
   }
   .teacher-profile {

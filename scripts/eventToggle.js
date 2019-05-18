@@ -27,8 +27,8 @@ const eventTemp = obj => {
   </ul>
   <h2 class="event-name">
     ${obj.eventName}
-    <i class="event-read-btn fas fa-caret-up"></i>
   </h2>
+  <i class="event-read-btn fas fa-caret-up"></i>
   <div class="event-detail">
     <div>
       ${obj.eventInfo}
@@ -40,7 +40,6 @@ const eventTemp = obj => {
 $(document).ready(() => {
   $(".event-read-btn").on("click", function() {
     $(this)
-      .parents()
       .next(".event-detail")
       .toggleClass("expand");
     $(this).toggleClass("rotate");

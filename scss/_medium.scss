@@ -106,9 +106,24 @@ footer {
   grid-column-gap: 0.5rem;
   align-items: center;
 }
-
+//EVENTS
+.event-list .event-container {
+  width: 90%;
+  margin: 0 auto;
+}
 //CLASS PAGES
 .class-page {
+  .class-info {
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    align-items: center;
+  }
+  .contact-btn {
+    width: 300px;
+    text-align: center;
+  }
   ul.timeTable {
     width: 50%;
     margin: 0 auto;

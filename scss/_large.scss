@@ -71,9 +71,22 @@ footer .developer {
   width: 80%;
   margin: 0 auto;
 }
-
+//EVENTS
+.event-list .event-container {
+  width: 75%;
+}
+.event-list .event-name {
+  margin-left: 1rem;
+}
 //CLASS PAGES
 .class-page {
+  .class-info {
+    grid-column-gap: 0;
+    figure {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
   .teacher-profile {
     .teacher-pic {
       width: 10%;

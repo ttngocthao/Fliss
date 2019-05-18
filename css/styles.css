@@ -501,10 +501,6 @@ footer {
   100% {
     left: 50%;
     transform: translateX(-50%); } }
-.event-name .event-read-btn {
-  font-size: 1.5rem;
-  transition: 0.2s ease-in-out; }
-
 .event-name .event-read-btn.rotate {
   transform: rotate(180deg); }
 
@@ -515,7 +511,9 @@ footer {
 
 .event-container .event-detail.expand {
   height: 100%;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: left; }
 
 .event-container .event-detail div {
   width: 90%;
@@ -527,11 +525,14 @@ footer {
 
 .event-list .event-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "date name name" "info info info";
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: "date name icon" "info info info";
   align-items: center;
+  grid-row-gap: 0.5rem;
   border-top: 1px solid #d3d3d3;
-  padding-top: 1rem; }
+  padding-top: 0.5rem; }
+  .event-list .event-container div {
+    margin: 0 auto; }
 
 .event-list .event-date {
   grid-area: date; }
@@ -539,16 +540,22 @@ footer {
     list-style: none;
     text-align: center; }
 
+.event-read-btn {
+  font-size: 0.9rem;
+  grid-area: icon;
+  transition: 0.2s ease-in-out;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-align: right; }
+
 .event-list .event-name {
   grid-area: name;
-  font-size: 1.2rem;
-  color: #ad1d33; }
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-left: 1rem; }
 
 .event-list .event-detail {
   grid-area: info; }
-
-.event-list .event-read-btn {
-  margin-left: 1rem; }
 
 /*========================TESTIMONIALS===============*/
 .review-wrapper {
@@ -595,8 +602,12 @@ footer {
     padding: 0 0.25rem; }
 .class-page .class-info {
   font-size: 0.9rem; }
+  .class-page .class-info figure {
+    width: 100%; }
+    .class-page .class-info figure img {
+      width: 100%; }
   .class-page .class-info .contact-btn {
-    text-align: center !important; }
+    text-align: center; }
 .class-page .teacher-profile {
   margin: 3rem auto;
   padding: 0.5rem;
@@ -796,6 +807,19 @@ footer {
     grid-column-gap: 0.5rem;
     align-items: center; }
 
+  .event-list .event-container {
+    width: 90%;
+    margin: 0 auto; }
+
+  .class-page .class-info {
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    align-items: center; }
+  .class-page .contact-btn {
+    width: 300px;
+    text-align: center; }
   .class-page ul.timeTable {
     width: 50%;
     margin: 0 auto; }
@@ -888,6 +912,17 @@ footer {
     width: 80%;
     margin: 0 auto; }
 
+  .event-list .event-container {
+    width: 75%; }
+
+  .event-list .event-name {
+    margin-left: 1rem; }
+
+  .class-page .class-info {
+    grid-column-gap: 0; }
+    .class-page .class-info figure {
+      width: 70%;
+      margin: 0 auto; }
   .class-page .teacher-profile .teacher-pic {
     width: 10%; }
 
