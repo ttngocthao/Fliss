@@ -5,8 +5,9 @@
   color: purple;
 }
 .content h1 {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
+  width: 60%;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 .banner {
   min-height: 400px;
@@ -102,5 +103,47 @@ footer {
   display: grid;
   padding: 1rem 0.5rem;
   grid-template-columns: 30% 70%;
-  align-items: start;
+  grid-column-gap: 0.5rem;
+  align-items: center;
+}
+
+//CLASS PAGES
+.class-page {
+  ul.timeTable {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .teacher-profile {
+    .teacher-pic {
+      width: 20%;
+    }
+  }
+}
+
+/*=============photo-gallery============*/
+.img-gallery {
+  .album-container {
+    .photo-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .photo-wrapper li {
+      height: 150px;
+    }
+  }
+}
+
+//CONTACT FORM
+.content.contact {
+  div {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.5rem;
+    align-items: center;
+  }
 }

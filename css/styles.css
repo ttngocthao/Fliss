@@ -212,7 +212,7 @@ body {
 .menuBar-small .mainList {
   position: fixed;
   padding: 3rem 1rem 1rem;
-  width: 90%;
+  width: 350px;
   overflow-y: scroll;
   left: -90%;
   transition: 0.5s ease;
@@ -318,14 +318,13 @@ body {
   width: 100%; }
 
 .content h1 {
-  width: 80%;
+  width: 70%;
   color: #ad1d33;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: right;
   text-align: center;
   margin: 1rem auto;
-  letter-spacing: 0.1rem;
-  display: inline-block;
+  letter-spacing: 0.05rem;
   padding: 0.5rem;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -334,7 +333,7 @@ body {
   border-bottom-width: 2px; }
 
 .content div {
-  text-align: center;
+  text-align: left;
   margin: 1rem auto; }
 
 .content div p {
@@ -348,7 +347,7 @@ body {
   margin-top: 0; }
 
 .founder figure {
-  width: 80%;
+  width: 50%;
   margin: 1rem auto; }
 
 .founder img {
@@ -376,7 +375,8 @@ body {
 
 .classes .lesson {
   width: 90%;
-  margin: 1rem auto 3rem auto; }
+  margin: 1rem auto 3rem auto;
+  text-align: center; }
 
 .lesson-img-wrapper {
   width: 80%;
@@ -421,6 +421,19 @@ body {
 
 #map {
   height: 300px; }
+
+.contact-btn {
+  border-radius: 10px;
+  background-color: #ad1d33;
+  text-align: center;
+  padding: 0.1rem 0;
+  margin: 0 auto;
+  width: 60%; }
+  .contact-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 0 4rem;
+    display: inline-block; }
 
 /*------------------Footer---------------*/
 footer {
@@ -502,7 +515,7 @@ footer {
 
 .event-container .event-detail.expand {
   height: 100%;
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 .event-container .event-detail div {
   width: 90%;
@@ -523,7 +536,8 @@ footer {
 .event-list .event-date {
   grid-area: date; }
   .event-list .event-date li {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
 
 .event-list .event-name {
   grid-area: name;
@@ -575,8 +589,14 @@ footer {
   justify-content: space-around; }
 .class-page .timeTable li {
   list-style: none; }
+  .class-page .timeTable li i {
+    padding-right: 0.5rem; }
+  .class-page .timeTable li span {
+    padding: 0 0.25rem; }
 .class-page .class-info {
   font-size: 0.9rem; }
+  .class-page .class-info .contact-btn {
+    text-align: center !important; }
 .class-page .teacher-profile {
   margin: 3rem auto;
   padding: 0.5rem;
@@ -595,6 +615,9 @@ footer {
       font-size: 0.8rem; }
 
 /*=============photo-gallery============*/
+.img-gallery h1 {
+  width: 50%;
+  border-bottom-color: transparent; }
 .img-gallery .album-container {
   margin: 2rem auto 0.8rem auto; }
   .img-gallery .album-container .photo-wrapper {
@@ -607,7 +630,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    border: 1px solid black; }
+    border: 1px solid white; }
 .img-gallery .modalBox {
   display: none;
   position: fixed;
@@ -636,6 +659,38 @@ footer {
   border: solid white 2px;
   border-radius: 15px; }
 
+.contact-form {
+  background-color: #f1f1f1;
+  width: 100%;
+  box-shadow: 3px 3px 3px #d3d3d3;
+  height: 100%; }
+  .contact-form h2 {
+    padding-top: 1rem; }
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 80%;
+    border-radius: 10px; }
+  .contact-form label {
+    text-align: left;
+    margin-left: 10%; }
+  .contact-form input,
+  .contact-form textarea {
+    margin: 0 auto; }
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    padding-left: 5%; }
+  .contact-form input[type="submit"] {
+    background-color: #ad1d33;
+    color: white;
+    box-shadow: 3px 3px 3px #d3d3d3;
+    outline: none;
+    font-size: 0.9rem;
+    border-style: none;
+    width: 180px;
+    margin: 0.5rem auto 1.5rem auto; }
+
 @media only screen and (min-width: 560px) {
   .logo {
     width: 10%; }
@@ -644,8 +699,9 @@ footer {
     color: purple; }
 
   .content h1 {
-    font-size: 2rem;
-    letter-spacing: 0.2rem; }
+    width: 60%;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem; }
 
   .banner {
     min-height: 400px;
@@ -737,7 +793,30 @@ footer {
     display: grid;
     padding: 1rem 0.5rem;
     grid-template-columns: 30% 70%;
-    align-items: start; } }
+    grid-column-gap: 0.5rem;
+    align-items: center; }
+
+  .class-page ul.timeTable {
+    width: 50%;
+    margin: 0 auto; }
+  .class-page .teacher-profile .teacher-pic {
+    width: 20%; }
+
+  /*=============photo-gallery============*/
+  .img-gallery .album-container .photo-wrapper {
+    grid-template-columns: repeat(4, 1fr); }
+  .img-gallery .album-container .photo-wrapper li {
+    height: 150px; }
+
+  .content.contact div {
+    width: 100%; }
+  .content.contact .contact-form {
+    width: 100%; }
+  .content.contact .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.5rem;
+    align-items: center; } }
 /*end media query*/
 @media only screen and (min-width: 1140px) {
   .content {
@@ -807,5 +886,12 @@ footer {
 
   .review-wrapper {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .class-page .teacher-profile .teacher-pic {
+    width: 10%; }
+
+  /*=============photo-gallery============*/
+  .img-gallery .album-container .photo-wrapper {
+    grid-template-columns: repeat(6, 1fr); } }
 /*end media query*/

@@ -71,3 +71,20 @@ footer .developer {
   width: 80%;
   margin: 0 auto;
 }
+
+//CLASS PAGES
+.class-page {
+  .teacher-profile {
+    .teacher-pic {
+      width: 10%;
+    }
+  }
+}
+/*=============photo-gallery============*/
+.img-gallery {
+  .album-container {
+    .photo-wrapper {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
