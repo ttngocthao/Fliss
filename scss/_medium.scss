@@ -2,12 +2,15 @@
   width: 10%;
 }
 .content {
-  color: purple;
+  //color: purple;
 }
 .content h1 {
   width: 60%;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+}
+.content iframe {
+  height: 400px;
 }
 .banner {
   min-height: 400px;
@@ -17,11 +20,12 @@
   top: 400px;
 }
 .greeting h1 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   letter-spacing: 2px;
 }
 .greeting h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 .crowdFunding {
   width: 80%;

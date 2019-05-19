@@ -218,15 +218,16 @@ body {
   padding: 0.5rem;
   animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
   box-shadow: 3px 3px 3px rgba(gray, 0.8);
+  h1 {
+    font-size: 1.75rem;
+  }
 }
 @keyframes flyIn {
   100% {
     left: 15%;
   }
 }
-.banner .greeting h1 {
-  font-size: 1.7rem;
-}
+
 .banner::after {
   content: "";
   background-image: url("../images/banner-2.jpg");
@@ -285,6 +286,9 @@ body {
 .content div p {
   margin: 0.5rem 0;
   font-size: 0.8rem;
+}
+.content iframe {
+  height: 350px;
 }
 .aboutUs {
   margin-top: 50px;
@@ -369,14 +373,17 @@ body {
 .contact ul li {
   list-style: none;
 }
-
+.content.contact .address {
+  text-align: center;
+  margin: 0.5rem auto;
+}
 .contact .media ul li i {
   font-size: 2rem;
 }
 #map {
   height: 300px;
 }
-.contact-btn {
+.content.contact .contact-btn {
   border-radius: 10px;
   background-color: $primaryColor;
   text-align: center;
@@ -387,7 +394,8 @@ body {
     text-decoration: none;
     color: white;
     padding: 0 4rem;
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
 }
 /*------------------Footer---------------*/
@@ -400,6 +408,9 @@ footer {
   .developer {
     font-size: 0.7rem;
     color: silver;
+    a {
+      color: pink;
+    }
   }
 }
 /*=================ABOUT US PAGE=================*/

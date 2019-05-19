@@ -293,13 +293,12 @@ body {
   padding: 0.5rem;
   animation: flyIn 2s cubic-bezier(0.5, 0.5, 0, 1) forwards;
   box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.8); }
+  .greeting h1 {
+    font-size: 1.75rem; }
 
 @keyframes flyIn {
   100% {
     left: 15%; } }
-.banner .greeting h1 {
-  font-size: 1.7rem; }
-
 .banner::after {
   content: "";
   background-image: url("../images/banner-2.jpg");
@@ -353,6 +352,9 @@ body {
 .content div p {
   margin: 0.5rem 0;
   font-size: 0.8rem; }
+
+.content iframe {
+  height: 350px; }
 
 .aboutUs {
   margin-top: 50px; }
@@ -430,24 +432,29 @@ body {
 .contact ul li {
   list-style: none; }
 
+.content.contact .address {
+  text-align: center;
+  margin: 0.5rem auto; }
+
 .contact .media ul li i {
   font-size: 2rem; }
 
 #map {
   height: 300px; }
 
-.contact-btn {
+.content.contact .contact-btn {
   border-radius: 10px;
   background-color: #ad1d33;
   text-align: center;
   padding: 0.1rem 0;
   margin: 0 auto;
   width: 60%; }
-  .contact-btn a {
+  .content.contact .contact-btn a {
     text-decoration: none;
     color: white;
     padding: 0 4rem;
-    display: inline-block; }
+    display: block;
+    text-align: center; }
 
 /*------------------Footer---------------*/
 footer {
@@ -458,6 +465,8 @@ footer {
   footer .developer {
     font-size: 0.7rem;
     color: silver; }
+    footer .developer a {
+      color: pink; }
 
 /*=================ABOUT US PAGE=================*/
 .aboutUs ul li {
@@ -724,13 +733,13 @@ footer {
   .logo {
     width: 10%; }
 
-  .content {
-    color: purple; }
-
   .content h1 {
     width: 60%;
     font-size: 1.5rem;
     letter-spacing: 0.1rem; }
+
+  .content iframe {
+    height: 400px; }
 
   .banner {
     min-height: 400px;
@@ -740,11 +749,12 @@ footer {
     top: 400px; }
 
   .greeting h1 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     letter-spacing: 2px; }
 
   .greeting h3 {
-    font-size: 1.5rem; }
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem; }
 
   .crowdFunding {
     width: 80%; }
@@ -865,8 +875,8 @@ footer {
     margin: 0 auto; } }
 /*end media query*/
 @media only screen and (min-width: 1140px) {
-  .content {
-    color: black; }
+  .content iframe {
+    height: 80vh; }
 
   .menuBar-small {
     display: none; }
