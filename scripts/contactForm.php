@@ -7,7 +7,7 @@ if( isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['pho
     $m = nl2br($_POST['message']);
 
     //===========================//
-    $to = "webdeveloper@thaotruong.uk";
+    $to = "contact-us@flissfameacademy.com";
     //========================//
     
 	$from = $email;

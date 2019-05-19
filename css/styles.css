@@ -165,9 +165,9 @@ body {
 
 #menuIcon.expand .wrapper {
   background-color: #4b59b6;
-  width: 12rem;
   padding-top: 2rem;
-  border-radius: 0; }
+  border-radius: 0;
+  transform: translate(250px, -30px); }
 
 #menuIcon div,
 #menuIcon div::before,
@@ -220,6 +220,20 @@ body {
   background-color: #4b59b6;
   color: white;
   z-index: 2; }
+  .menuBar-small .mainList a li:hover,
+  .menuBar-small .mainList li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ad1d33; }
+    .menuBar-small .mainList a li:hover .classesIcon,
+    .menuBar-small .mainList li:hover .classesIcon {
+      color: #ad1d33; }
+  .menuBar-small .mainList a.actived li,
+  .menuBar-small .mainList li.actived {
+    background-color: white;
+    color: #ad1d33; }
+    .menuBar-small .mainList a.actived li i,
+    .menuBar-small .mainList li.actived i {
+      color: #ad1d33; }
 
 .menuBar-small .mainList::-webkit-scrollbar {
   width: 2px; }
@@ -288,7 +302,7 @@ body {
 
 .banner::after {
   content: "";
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -593,7 +607,9 @@ footer {
 .class-page ul.timeTable {
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column; }
 .class-page .timeTable li {
   list-style: none; }
   .class-page .timeTable li i {
@@ -636,7 +652,7 @@ footer {
     grid-template-columns: repeat(3, 1fr); }
   .img-gallery .album-container .photo-wrapper li {
     list-style: none;
-    height: 100px;
+    min-height: 150px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -662,13 +678,14 @@ footer {
   width: 80%;
   clear: both;
   height: 90vh;
-  margin: 2rem auto;
-  overflow-y: auto; }
+  margin: 2rem auto; }
 .img-gallery .modalBox-content img {
-  width: 100%;
+  max-width: 90%;
+  max-height: 80%;
   display: block;
   border: solid white 2px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin: 0 auto; }
 
 .contact-form {
   background-color: #f1f1f1;
@@ -676,7 +693,8 @@ footer {
   box-shadow: 3px 3px 3px #d3d3d3;
   height: 100%; }
   .contact-form h2 {
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    text-align: center; }
   .contact-form label,
   .contact-form input,
   .contact-form textarea {
@@ -821,8 +839,9 @@ footer {
     width: 300px;
     text-align: center; }
   .class-page ul.timeTable {
-    width: 50%;
-    margin: 0 auto; }
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row; }
   .class-page .teacher-profile .teacher-pic {
     width: 20%; }
 
@@ -830,7 +849,7 @@ footer {
   .img-gallery .album-container .photo-wrapper {
     grid-template-columns: repeat(4, 1fr); }
   .img-gallery .album-container .photo-wrapper li {
-    height: 150px; }
+    height: 180px; }
 
   .content.contact div {
     width: 100%; }
@@ -840,7 +859,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 0.5rem;
-    align-items: center; } }
+    align-items: center; }
+  .content.contact .contact-right .address ul {
+    width: 90%;
+    margin: 0 auto; } }
 /*end media query*/
 @media only screen and (min-width: 1140px) {
   .content {
@@ -859,9 +881,27 @@ footer {
 
   .menuBar-big .mainList {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     color: #4b59b6;
-    height: 2rem; }
+    height: 3rem;
+    padding: 0 1rem; }
+    .menuBar-big .mainList li {
+      margin: 0.5rem;
+      text-align: center; }
+    .menuBar-big .mainList a li:hover,
+    .menuBar-big .mainList li:hover {
+      background-color: #f0a6b1;
+      color: white;
+      border-radius: 5px 0;
+      transition: 0.3s; }
+    .menuBar-big .mainList a.actived li,
+    .menuBar-big .mainList li.actived {
+      background-color: #ad1d33;
+      color: white;
+      border-radius: 5px 0; }
+      .menuBar-big .mainList a.actived li i,
+      .menuBar-big .mainList li.actived i {
+        color: white; }
 
   .menuBar-big .mainList #classes {
     width: 5rem; }
@@ -870,11 +910,12 @@ footer {
     color: #ad1d33; }
 
   .menuBar-big .classesMenu {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 10rem; }
+    background-color: white;
+    width: 227.5px; }
 
   .menuBar-big .classesMenu.expand {
-    height: 13rem; }
+    height: auto;
+    margin: 0 auto; }
 
   .crowdFunding {
     width: 70%;
@@ -923,6 +964,8 @@ footer {
     .class-page .class-info figure {
       width: 70%;
       margin: 0 auto; }
+  .class-page ul.timeTable {
+    width: 70%; }
   .class-page .teacher-profile .teacher-pic {
     width: 10%; }
 

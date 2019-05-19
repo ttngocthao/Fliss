@@ -85,9 +85,9 @@ body {
 }
 #menuIcon.expand .wrapper {
   background-color: $secondaryColor;
-  width: 12rem;
   padding-top: 2rem;
   border-radius: 0;
+  transform: translate(250px, -30px);
 }
 #menuIcon div,
 #menuIcon div::before,
@@ -142,10 +142,27 @@ body {
   background-color: $secondaryColor;
   color: white;
   z-index: 2;
+  a li:hover,
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: $primaryColor;
+    .classesIcon {
+      color: $primaryColor;
+    }
+  }
+  a.actived li,
+  li.actived {
+    background-color: white;
+    color: $primaryColor;
+    i {
+      color: $primaryColor;
+    }
+  }
 }
 .menuBar-small .mainList::-webkit-scrollbar {
   width: 2px;
 }
+
 .menuBar-big .mainList a {
   text-decoration: none;
   color: $secondaryColor;
@@ -212,7 +229,7 @@ body {
 }
 .banner::after {
   content: "";
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/banner-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -545,6 +562,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .timeTable li {
     list-style: none;
@@ -609,7 +628,7 @@ footer {
     }
     .photo-wrapper li {
       list-style: none;
-      height: 100px;
+      min-height: 150px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -640,13 +659,14 @@ footer {
     clear: both;
     height: 90vh;
     margin: 2rem auto;
-    overflow-y: auto;
   }
   .modalBox-content img {
-    width: 100%;
+    max-width: 90%;
+    max-height: 80%;
     display: block;
     border: solid white 2px;
     border-radius: 15px;
+    margin: 0 auto;
   }
 }
 //CONTACT FORM
@@ -657,6 +677,7 @@ footer {
   height: 100%;
   h2 {
     padding-top: 1rem;
+    text-align: center;
   }
   label,
   input,

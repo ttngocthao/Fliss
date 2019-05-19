@@ -14,9 +14,30 @@
 }
 .menuBar-big .mainList {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   color: $secondaryColor;
-  height: 2rem;
+  height: 3rem;
+  padding: 0 1rem;
+  li {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  a li:hover,
+  li:hover {
+    background-color: lighten($color: $primaryColor, $amount: 40%);
+    color: white;
+    border-radius: 5px 0;
+    transition: 0.3s;
+  }
+  a.actived li,
+  li.actived {
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 5px 0;
+    i {
+      color: white;
+    }
+  }
 }
 .menuBar-big .mainList #classes {
   width: 5rem;
@@ -25,11 +46,13 @@
   color: $primaryColor;
 }
 .menuBar-big .classesMenu {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 10rem;
+  background-color: rgba(255, 255, 255, 1);
+  width: 227.5px;
 }
 .menuBar-big .classesMenu.expand {
-  height: 13rem;
+  height: auto;
+
+  margin: 0 auto;
 }
 // .menuBar-big .classesMenu li{
 //     width:10rem;
@@ -86,6 +109,9 @@ footer .developer {
       width: 70%;
       margin: 0 auto;
     }
+  }
+  ul.timeTable {
+    width: 70%;
   }
   .teacher-profile {
     .teacher-pic {

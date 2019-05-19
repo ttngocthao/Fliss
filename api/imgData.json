@@ -1,68 +1,49 @@
 [
   {
     "albumName": "artDesign",
-    "photoUrls": [
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg"
-    ]
+    "photoUrls": ["./images/art/1.jpg", "./images/art/2.jpg"]
   },
   {
     "albumName": "boxing",
-    "photoUrls": [
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg"
-    ]
+    "photoUrls": ["./images/boxing/1.jpg"]
   },
   {
     "albumName": "drama",
     "photoUrls": [
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg"
+      "./images/drama/1.jpg",
+      "./images/drama/2.jpg",
+      "./images/drama/3.jpg",
+      "./images/drama/4.jpg",
+      "./images/drama/5.jpg",
+      "./images/drama/6.jpg",
+      "./images/drama/7.jpg",
+      "./images/drama/8.jpg",
+      "./images/drama/9.jpg"
     ]
   },
   {
     "albumName": "singing",
     "photoUrls": [
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg"
+      "./images/singing/1.jpg",
+      "./images/singing/2.jpg",
+      "./images/singing/3.jpg",
+      "./images/singing/4.jpg",
+      "./images/singing/5.jpg",
+      "./images/singing/6.jpg",
+      "./images/singing/7.jpg"
     ]
   },
   {
     "albumName": "sport",
-    "photoUrls": [
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg"
-    ]
+    "photoUrls": ["./images/sport/1.jpg"]
   },
   {
     "albumName": "streetDancing",
     "photoUrls": [
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg",
-      "./images/banner.jpg"
+      "./images/dancing/1.jpg",
+      "./images/dancing/2.jpg",
+      "./images/dancing/3.jpg",
+      "./images/dancing/4.jpg"
     ]
   }
 ]
