@@ -124,6 +124,7 @@ body {
 
 #menuIcon .wrapper {
   background-color: white;
+  background-image: radial-gradient(white, #bebebe);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -167,7 +168,8 @@ body {
   background-color: #4b59b6;
   padding-top: 2rem;
   border-radius: 0;
-  transform: translate(250px, -30px); }
+  transform: translate(250px, -30px);
+  background-image: none; }
 
 #menuIcon div,
 #menuIcon div::before,
@@ -196,7 +198,7 @@ body {
 
 #menuIcon.expand div::before,
 #menuIcon.expand div::after {
-  background-color: #ad1d33;
+  background-color: white;
   margin-top: 0; }
 
 #menuIcon.expand div:after {
@@ -464,9 +466,9 @@ footer {
     list-style: none; }
   footer .developer {
     font-size: 0.7rem;
-    color: silver; }
+    color: #8a8a8a; }
     footer .developer a {
-      color: pink; }
+      color: #fc8297; }
 
 /*=================ABOUT US PAGE=================*/
 .aboutUs ul li {
@@ -613,6 +615,20 @@ footer {
   margin: 0 auto; }
 
 /*=============street dancing page================*/
+.content.class-page .contact-btn {
+  border-radius: 10px;
+  background-color: #ad1d33;
+  text-align: center;
+  padding: 0.1rem 0;
+  margin: 0 auto;
+  width: 60%; }
+  .content.class-page .contact-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 0 4rem;
+    display: block;
+    text-align: center; }
+
 .class-page ul.timeTable {
   display: flex;
   align-items: center;
@@ -631,8 +647,6 @@ footer {
     width: 100%; }
     .class-page .class-info figure img {
       width: 100%; }
-  .class-page .class-info .contact-btn {
-    text-align: center; }
 .class-page .teacher-profile {
   margin: 3rem auto;
   padding: 0.5rem;
@@ -838,6 +852,10 @@ footer {
   .event-list .event-container {
     width: 90%;
     margin: 0 auto; }
+
+  .content.class-page .contact-btn,
+  .content.contact .contact-btn {
+    width: 300px; }
 
   .class-page .class-info {
     font-size: 0.9rem;

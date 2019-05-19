@@ -116,6 +116,10 @@ footer {
   margin: 0 auto;
 }
 //CLASS PAGES
+.content.class-page .contact-btn,
+.content.contact .contact-btn {
+  width: 300px;
+}
 .class-page {
   .class-info {
     font-size: 0.9rem;

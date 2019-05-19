@@ -37,6 +37,7 @@ body {
 }
 #menuIcon .wrapper {
   background-color: white;
+  background-image: radial-gradient(white, #bebebe);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -88,6 +89,7 @@ body {
   padding-top: 2rem;
   border-radius: 0;
   transform: translate(250px, -30px);
+  background-image: none;
 }
 #menuIcon div,
 #menuIcon div::before,
@@ -117,7 +119,7 @@ body {
 }
 #menuIcon.expand div::before,
 #menuIcon.expand div::after {
-  background-color: $primaryColor;
+  background-color: white;
   margin-top: 0;
 }
 #menuIcon.expand div:after {
@@ -407,9 +409,9 @@ footer {
   }
   .developer {
     font-size: 0.7rem;
-    color: silver;
+    color: #8a8a8a;
     a {
-      color: pink;
+      color: rgb(252, 130, 151);
     }
   }
 }
@@ -568,6 +570,21 @@ footer {
   margin: 0 auto;
 }
 /*=============street dancing page================*/
+.content.class-page .contact-btn {
+  border-radius: 10px;
+  background-color: $primaryColor;
+  text-align: center;
+  padding: 0.1rem 0;
+  margin: 0 auto;
+  width: 60%;
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 0 4rem;
+    display: block;
+    text-align: center;
+  }
+}
 .class-page {
   ul.timeTable {
     display: flex;
@@ -593,10 +610,8 @@ footer {
         width: 100%;
       }
     }
-    .contact-btn {
-      text-align: center;
-    }
   }
+
   .teacher-profile {
     // display: flex;
     margin: 3rem auto;

@@ -43,7 +43,9 @@
       "./images/dancing/1.jpg",
       "./images/dancing/2.jpg",
       "./images/dancing/3.jpg",
-      "./images/dancing/4.jpg"
+      "./images/dancing/4.jpg",
+      "/images/dancing/5.jpg",
+      "/images/dancing/6.jpg"
     ]
   }
 ]
