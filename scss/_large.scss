@@ -1,132 +1,167 @@
-.content {
-  //color: black;
+html {
+    max-width: 1000px;
+    margin: 0 auto;
 }
-.content iframe {
-  height: 80vh;
-}
-.menuBar-small {
-  display: none;
-}
-#menuIcon {
-  display: none;
-}
-.menuBar-big {
-  display: block;
-  position: fixed;
-  z-index: 2;
-}
-.menuBar-big .mainList {
-  display: flex;
-  background-color: rgba(255, 255, 255, 1);
-  color: $secondaryColor;
-  height: 3rem;
-  padding: 0 1rem;
-  li {
-    margin: 0.5rem;
-    text-align: center;
-  }
-  a li:hover,
-  li:hover {
-    background-color: lighten($color: $primaryColor, $amount: 40%);
-    color: white;
-    border-radius: 5px 0;
-    transition: 0.3s;
-  }
-  a.actived li,
-  li.actived {
-    background-color: $primaryColor;
-    color: white;
-    border-radius: 5px 0;
-    i {
-      color: white;
-    }
-  }
-}
-.menuBar-big .mainList #classes {
-  width: 5rem;
-}
-.menuBar-big .classesIcon {
-  color: $primaryColor;
-}
-.menuBar-big .classesMenu {
-  background-color: rgba(255, 255, 255, 1);
-  width: 227.5px;
-}
-.menuBar-big .classesMenu.expand {
-  height: auto;
 
-  margin: 0 auto;
+.banner {
+    height: auto;
+    overflow: hidden;
 }
+
+.content {
+    //color: black;
+}
+
+.content iframe {
+    height: 80vh;
+}
+
+.menuBar-small {
+    display: none;
+}
+
+#menuIcon {
+    display: none;
+}
+
+.menuBar-big {
+    display: block;
+    position: fixed;
+    z-index: 2;
+}
+
+.menuBar-big .mainList {
+    display: flex;
+    background-color: #d3d3d3;
+    color: $secondaryColor;
+    height: 3rem;
+    padding: 0 1rem;
+
+    li {
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    a li:hover,
+    li:hover {
+        background-color: lighten($color: $primaryColor, $amount: 40%);
+        color: white;
+        border-radius: 5px 0;
+        transition: 0.3s;
+    }
+
+    a.actived li,
+    li.actived {
+        background-color: $primaryColor;
+        color: white;
+        border-radius: 5px 0;
+
+        i {
+            color: white;
+        }
+    }
+}
+
+.menuBar-big .mainList #classes {
+    width: 5rem;
+}
+
+.menuBar-big .classesIcon {
+    color: $primaryColor;
+}
+
+.menuBar-big .classesMenu {
+    background-color: #d3d3d3;
+    width: 227.5px;
+}
+
+.menuBar-big .classesMenu.expand {
+    height: auto;
+
+    margin: 0 auto;
+}
+
 // .menuBar-big .classesMenu li{
 //     width:10rem;
 // }
 .crowdFunding {
-  width: 70%;
-  padding: 1rem;
+    width: 70%;
+    padding: 1rem;
 }
+
 .content h1 {
-  width: 40%;
+    width: 40%;
 }
+
 .home .founder .wrapper div {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
-.home .founder figure {
-  min-width: 50%;
-  max-width: 60%;
-  margin: 1rem 0;
-}
+
+.home .founder figure {}
+
 .content.aboutUs {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
+
 .classes .wrapper {
-  grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
+
 .lesson-img-wrapper {
-  width: 60%;
+    width: 60%;
 }
+
 footer .developer {
-  text-align: right;
-  margin-right: 2%;
+    text-align: right;
+    margin-right: 2%;
 }
+
 .founder .founder-wrapper .img-wrapper {
-  width: 20%;
+    width: 20%;
 }
 
 .review-wrapper {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
+
 //EVENTS
 .event-list .event-container {
-  width: 75%;
+    width: 75%;
 }
+
 .event-list .event-name {
-  margin-left: 1rem;
+    margin-left: 1rem;
 }
+
 //CLASS PAGES
 .class-page {
-  .class-info {
-    grid-column-gap: 0;
-    figure {
-      width: 70%;
-      margin: 0 auto;
+    .class-info {
+        grid-column-gap: 0;
+
+        figure {
+            width: 70%;
+            margin: 0 auto;
+        }
     }
-  }
-  ul.timeTable {
-    width: 70%;
-  }
-  .teacher-profile {
-    .teacher-pic {
-      width: 10%;
+
+    ul.timeTable {
+        width: 70%;
     }
-  }
+
+    .teacher-profile {
+        .teacher-pic {
+            width: 10%;
+        }
+    }
 }
+
 /*=============photo-gallery============*/
 .img-gallery {
-  .album-container {
-    .photo-wrapper {
-      grid-template-columns: repeat(6, 1fr);
+    .album-container {
+        .photo-wrapper {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
-  }
 }

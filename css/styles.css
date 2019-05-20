@@ -109,7 +109,8 @@ body {
   top: 0.5rem;
   right: 2%;
   width: 15%;
-  z-index: 5; }
+  z-index: 5;
+  max-width: 100px; }
 
 .logo img {
   width: 100%; }
@@ -526,7 +527,7 @@ footer {
   100% {
     left: 50%;
     transform: translateX(-50%); } }
-.event-name .event-read-btn.rotate {
+.event-read-btn.rotate {
   transform: rotate(180deg); }
 
 .event-container .event-detail {
@@ -571,7 +572,8 @@ footer {
   transition: 0.2s ease-in-out;
   margin-right: 1rem;
   cursor: pointer;
-  text-align: right; }
+  text-align: center;
+  transform-origin: 50% 50%; }
 
 .event-list .event-name {
   grid-area: name;
@@ -776,16 +778,15 @@ footer {
   .founder .crowdFunding {
     margin-bottom: 2rem; }
 
-  .home .founder .wrapper {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    justify-content: center; }
+  .home .founder .wrapper figure {
+    max-width: 150px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 2rem; }
 
-  .home .founder figure {
-    min-width: 60%;
-    max-width: 70%;
-    justify-self: center; }
+  .home .founder .wrapper .short-bio {
+    width: 90%;
+    margin: 0 auto; }
 
   .classes .lesson h3 {
     letter-spacing: 0;
@@ -893,6 +894,14 @@ footer {
     margin: 0 auto; } }
 /*end media query*/
 @media only screen and (min-width: 1140px) {
+  html {
+    max-width: 1000px;
+    margin: 0 auto; }
+
+  .banner {
+    height: auto;
+    overflow: hidden; }
+
   .content iframe {
     height: 80vh; }
 
@@ -909,7 +918,7 @@ footer {
 
   .menuBar-big .mainList {
     display: flex;
-    background-color: white;
+    background-color: #d3d3d3;
     color: #4b59b6;
     height: 3rem;
     padding: 0 1rem; }
@@ -938,7 +947,7 @@ footer {
     color: #ad1d33; }
 
   .menuBar-big .classesMenu {
-    background-color: white;
+    background-color: #d3d3d3;
     width: 227.5px; }
 
   .menuBar-big .classesMenu.expand {
@@ -954,11 +963,6 @@ footer {
 
   .home .founder .wrapper div {
     padding: 0.5rem; }
-
-  .home .founder figure {
-    min-width: 50%;
-    max-width: 60%;
-    margin: 1rem 0; }
 
   .content.aboutUs {
     width: 80%;

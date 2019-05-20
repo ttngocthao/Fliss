@@ -1,179 +1,221 @@
 .logo {
-  width: 10%;
+    width: 10%;
 }
+
 .content {
-  //color: purple;
+    //color: purple;
 }
+
 .content h1 {
-  width: 60%;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+    width: 60%;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
+
 .content iframe {
-  height: 400px;
+    height: 400px;
 }
+
 .banner {
-  min-height: 400px;
-  max-height: 100%;
+    min-height: 400px;
+    max-height: 100%;
 }
+
 .greeting {
-  top: 400px;
+    top: 400px;
 }
+
 .greeting h1 {
-  font-size: 1.9rem;
-  letter-spacing: 2px;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
 }
+
 .greeting h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
 }
+
 .crowdFunding {
-  width: 80%;
+    width: 80%;
 }
+
 .founder .crowdFunding {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
+
 .home .founder .wrapper {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  align-items: center;
-  justify-content: center;
+    // display: grid;
+    // grid-template-columns: 40% 60%;
+    // align-items: center;
+    // justify-content: center;
 }
-.home .founder figure {
-  min-width: 60%;
-  max-width: 70%;
-  justify-self: center;
+
+.home .founder .wrapper figure {
+    max-width: 150px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    // justify-self: center;
 }
+
+.home .founder .wrapper .short-bio {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .classes .lesson h3 {
-  letter-spacing: 0;
-  font-size: 1.5rem;
+    letter-spacing: 0;
+    font-size: 1.5rem;
 }
+
 .classes .wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
 .lesson-img-wrapper {
-  width: 70%;
+    width: 70%;
 }
+
 footer {
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  ul li:nth-child(2) {
-    margin-right: 2%;
-    text-align: right;
-  }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul li:nth-child(2) {
+        margin-right: 2%;
+        text-align: right;
+    }
 }
+
 /*ABOUT HTML*/
 .partnerships-img-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
 }
+
 .aboutUs .open-time {
-  margin-left: 1rem;
+    margin-left: 1rem;
 }
+
 .aboutUs .open-time {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
+
 .aboutUs .purposes ul {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
+
 /*FOUNDER PAGE*/
 .founder .founder-wrapper {
-  position: relative;
+    position: relative;
 }
+
 .founder .founder-wrapper .img-wrapper {
-  float: left;
-  top: 0;
-  left: 0;
-  width: 30%;
-  margin: 1rem;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 30%;
+    margin: 1rem;
 }
+
 .founder .founder-wrapper .founder-history {
-  width: 90%;
-  margin: 0 auto;
-  text-align: left;
-  p {
-    padding: 0.5rem;
-  }
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+
+    p {
+        padding: 0.5rem;
+    }
 }
+
 .review-wrapper {
-  display: grid;
-  padding: 1rem 0.5rem;
-  grid-template-columns: 30% 70%;
-  grid-column-gap: 0.5rem;
-  align-items: center;
+    display: grid;
+    padding: 1rem 0.5rem;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 0.5rem;
+    align-items: center;
 }
+
 //EVENTS
 .event-list .event-container {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
+
 //CLASS PAGES
 .content.class-page .contact-btn,
 .content.contact .contact-btn {
-  width: 300px;
-}
-.class-page {
-  .class-info {
-    font-size: 0.9rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    align-items: center;
-  }
-  .contact-btn {
     width: 300px;
-    text-align: center;
-  }
-  ul.timeTable {
-    width: 90%;
-    margin: 0 auto;
-    flex-direction: row;
-  }
-  .teacher-profile {
-    .teacher-pic {
-      width: 20%;
+}
+
+.class-page {
+    .class-info {
+        font-size: 0.9rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        align-items: center;
     }
-  }
+
+    .contact-btn {
+        width: 300px;
+        text-align: center;
+    }
+
+    ul.timeTable {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .teacher-profile {
+        .teacher-pic {
+            width: 20%;
+        }
+    }
 }
 
 /*=============photo-gallery============*/
 .img-gallery {
-  .album-container {
-    .photo-wrapper {
-      grid-template-columns: repeat(4, 1fr);
+    .album-container {
+        .photo-wrapper {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .photo-wrapper li {
+            height: 180px;
+        }
     }
-    .photo-wrapper li {
-      height: 180px;
-    }
-  }
 }
 
 //CONTACT FORM
 .content.contact {
-  div {
-    width: 100%;
-  }
-  .contact-form {
-    width: 100%;
-  }
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0.5rem;
-    align-items: center;
-  }
-  .contact-right {
-    .address ul {
-      width: 90%;
-      margin: 0 auto;
+    div {
+        width: 100%;
     }
-  }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0.5rem;
+        align-items: center;
+    }
+
+    .contact-right {
+        .address ul {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 }
