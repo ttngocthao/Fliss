@@ -3,7 +3,7 @@
 }
 
 .content {
-    //color: purple;
+    color: coral;
 }
 
 .content h1 {
@@ -12,8 +12,27 @@
     letter-spacing: 0.1rem;
 }
 
+.video-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        max-width: 800px;
+    }
+}
+
+
 .content iframe {
-    height: 400px;
+    width: 640px;
+    height: 360px;
+}
+
+.banner-wrapper {
+
+    padding-bottom: 2.5rem;
 }
 
 .banner {
@@ -53,19 +72,20 @@
 .home .founder .wrapper figure {
     max-width: 150px;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+    margin: 1rem;
+
     // justify-self: center;
 }
 
 .home .founder .wrapper .short-bio {
     width: 90%;
+    //max-width: 600px;
     margin: 0 auto;
 }
 
 .classes .lesson h3 {
     letter-spacing: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .classes .wrapper {
@@ -141,12 +161,14 @@ footer {
     grid-template-columns: 30% 70%;
     grid-column-gap: 0.5rem;
     align-items: center;
+    max-width: 700px;
 }
 
 //EVENTS
 .event-list .event-container {
     width: 90%;
     margin: 0 auto;
+
 }
 
 //CLASS PAGES

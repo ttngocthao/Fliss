@@ -19,6 +19,12 @@ body {
 }
 
 /*=============== HEADER ===============*/
+header {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .logo {
     position: fixed;
     top: 0.5rem;
@@ -235,6 +241,11 @@ body {
 }
 
 /*====================BANNER=====================*/
+.banner-wrapper {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
 .banner {
     height: 300px;
     width: 100%;
@@ -336,6 +347,14 @@ body {
     height: 350px;
 }
 
+.page-links a {
+    //display: flex;
+    //flex-direction: column;
+    //align-self: flex-start;
+    display: block;
+    text-align: center;
+}
+
 .aboutUs {
     margin-top: 50px;
 }
@@ -356,6 +375,7 @@ body {
 
 .crowdFunding {
     width: 95%;
+    max-width: 500px;
     margin: 3rem auto 0;
     background-color: $primaryColor;
     color: white;

@@ -104,6 +104,11 @@ body {
   line-height: 1.5rem; }
 
 /*=============== HEADER ===============*/
+header {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto; }
+
 .logo {
   position: fixed;
   top: 0.5rem;
@@ -278,6 +283,10 @@ body {
   height: 100%; }
 
 /*====================BANNER=====================*/
+.banner-wrapper {
+  position: relative;
+  padding-bottom: 2rem; }
+
 .banner {
   height: 300px;
   width: 100%;
@@ -359,6 +368,10 @@ body {
 .content iframe {
   height: 350px; }
 
+.page-links a {
+  display: block;
+  text-align: center; }
+
 .aboutUs {
   margin-top: 50px; }
 
@@ -375,6 +388,7 @@ body {
 
 .crowdFunding {
   width: 95%;
+  max-width: 500px;
   margin: 3rem auto 0;
   background-color: #ad1d33;
   color: white;
@@ -749,13 +763,29 @@ footer {
   .logo {
     width: 10%; }
 
+  .content {
+    color: coral; }
+
   .content h1 {
     width: 60%;
     font-size: 1.5rem;
     letter-spacing: 0.1rem; }
 
+  .video-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .video-wrapper p {
+      max-width: 800px; }
+
   .content iframe {
-    height: 400px; }
+    width: 640px;
+    height: 360px; }
+
+  .banner-wrapper {
+    padding-bottom: 2.5rem; }
 
   .banner {
     min-height: 400px;
@@ -781,8 +811,7 @@ footer {
   .home .founder .wrapper figure {
     max-width: 150px;
     float: left;
-    margin-right: 1rem;
-    margin-bottom: 2rem; }
+    margin: 1rem; }
 
   .home .founder .wrapper .short-bio {
     width: 90%;
@@ -790,7 +819,7 @@ footer {
 
   .classes .lesson h3 {
     letter-spacing: 0;
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
 
   .classes .wrapper {
     display: grid;
@@ -848,7 +877,8 @@ footer {
     padding: 1rem 0.5rem;
     grid-template-columns: 30% 70%;
     grid-column-gap: 0.5rem;
-    align-items: center; }
+    align-items: center;
+    max-width: 700px; }
 
   .event-list .event-container {
     width: 90%;
@@ -899,8 +929,15 @@ footer {
     margin: 0 auto; }
 
   .banner {
-    height: auto;
-    overflow: hidden; }
+    min-height: 500px;
+    overflow: hidden;
+    top: 60px; }
+
+  .greeting {
+    top: 500px; }
+
+  .content {
+    color: black; }
 
   .content iframe {
     height: 80vh; }
@@ -914,7 +951,10 @@ footer {
   .menuBar-big {
     display: block;
     position: fixed;
-    z-index: 2; }
+    z-index: 2;
+    width: 100%;
+    max-width: 1000px;
+    height: 50px; }
 
   .menuBar-big .mainList {
     display: flex;
@@ -954,6 +994,9 @@ footer {
     height: auto;
     margin: 0 auto; }
 
+  .logo {
+    margin: 0 2rem; }
+
   .crowdFunding {
     width: 70%;
     padding: 1rem; }
@@ -982,8 +1025,7 @@ footer {
     width: 20%; }
 
   .review-wrapper {
-    width: 80%;
-    margin: 0 auto; }
+    max-width: 800px; }
 
   .event-list .event-container {
     width: 75%; }
@@ -996,10 +1038,10 @@ footer {
     .class-page .class-info figure {
       width: 70%;
       margin: 0 auto; }
-  .class-page ul.timeTable {
-    width: 70%; }
-  .class-page .teacher-profile .teacher-pic {
-    width: 10%; }
+  .class-page .teacher-profile {
+    max-width: 800px; }
+    .class-page .teacher-profile .teacher-pic {
+      width: 10%; }
 
   /*=============photo-gallery============*/
   .img-gallery .album-container .photo-wrapper {

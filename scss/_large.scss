@@ -4,12 +4,17 @@ html {
 }
 
 .banner {
-    height: auto;
+    min-height: 500px;
     overflow: hidden;
+    top: 60px;
+}
+
+.greeting {
+    top: 500px;
 }
 
 .content {
-    //color: black;
+    color: black;
 }
 
 .content iframe {
@@ -28,6 +33,9 @@ html {
     display: block;
     position: fixed;
     z-index: 2;
+    width: 100%;
+    max-width: 1000px;
+    height: 50px;
 }
 
 .menuBar-big .mainList {
@@ -81,6 +89,12 @@ html {
     margin: 0 auto;
 }
 
+.logo {
+    //right: 0;
+    margin: 0 2rem;
+    //transform: translateX(850px);
+}
+
 // .menuBar-big .classesMenu li{
 //     width:10rem;
 // }
@@ -122,8 +136,7 @@ footer .developer {
 }
 
 .review-wrapper {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 800px;
 }
 
 //EVENTS
@@ -147,10 +160,13 @@ footer .developer {
     }
 
     ul.timeTable {
-        width: 70%;
+        // width: 70%;
     }
 
     .teacher-profile {
+        max-width: 800px;
+
+
         .teacher-pic {
             width: 10%;
         }
