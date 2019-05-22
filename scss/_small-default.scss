@@ -49,7 +49,7 @@ header {
 
 #menuIcon .wrapper {
     background-color: white;
-    background-image: radial-gradient(white, #bebebe);
+    background-image: radial-gradient(white, #e6e6e6);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -63,7 +63,7 @@ header {
 #menuIcon span {
     width: 20px;
     height: 20px;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     position: absolute;
     z-index: -1;
     border-radius: 50%;
@@ -104,10 +104,10 @@ header {
 }
 
 #menuIcon.expand .wrapper {
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     padding-top: 2rem;
     border-radius: 0;
-    transform: translate(250px, -30px);
+
     background-image: none;
 }
 
@@ -157,34 +157,36 @@ header {
 /*=========================MENU BAR ====================*/
 .menuBar-big {
     display: none;
+    color: white;
 }
 
 .menuBar-small .mainList {
     position: fixed;
     padding: 3rem 1rem 1rem;
-    width: 350px;
+    width: 250px;
     overflow-y: scroll;
     left: -90%;
     transition: 0.5s ease;
     height: 100vh;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     color: white;
     z-index: 2;
 
-    a li:hover,
-    li:hover {
-        background-color: rgba(255, 255, 255, 0.5);
-        color: $primaryColor;
+    // a li:hover,
+    // li:hover {
+    //     background-color: rgba(255, 255, 255, 0.5);
+    //     color: $primaryColor;
 
-        .classesIcon {
-            color: $primaryColor;
-        }
-    }
+    //     .classesIcon {
+    //         color: $primaryColor;
+    //     }
+    // }
 
     a.actived li,
     li.actived {
         background-color: white;
         color: $primaryColor;
+        border-radius: 10px 0;
 
         i {
             color: $primaryColor;
@@ -208,6 +210,7 @@ header {
 
 .mainList li {
     padding: 0.3rem;
+    color: white;
 }
 
 .menuBar-small .mainList.expand {
@@ -232,7 +235,7 @@ header {
     transition: 1s ease;
     margin-top: 0.5rem;
     margin-left: 2%;
-    background-color: lighten($secondaryColor, 3%);
+    background-color: $primaryColor;
 }
 
 .classesMenu.expand {
@@ -422,11 +425,10 @@ header {
     margin-top: 0.5rem;
     // letter-spacing: 0.2rem;
 
-    color: #ec2b48;
 }
 
 .classes .lesson a {
-    color: #ec2b48;
+
     text-decoration: none;
 }
 
@@ -480,8 +482,8 @@ header {
     a {
         text-decoration: none;
         color: white;
-        padding: 0 4rem;
-        display: block;
+
+        display: inline-block;
         text-align: center;
     }
 }
@@ -695,7 +697,7 @@ footer {
     a {
         text-decoration: none;
         color: white;
-        padding: 0 4rem;
+        display: inline-block;
         display: block;
         text-align: center;
     }

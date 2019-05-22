@@ -13,9 +13,9 @@ html {
     top: 500px;
 }
 
-.content {
-    color: black;
-}
+// .content {
+    //     color: black;
+    // }
 
 .content iframe {
     height: 80vh;
@@ -40,8 +40,8 @@ html {
 
 .menuBar-big .mainList {
     display: flex;
-    background-color: #d3d3d3;
-    color: $secondaryColor;
+    background-color: $primaryColor;
+    color: white;
     height: 3rem;
     padding: 0 1rem;
 
@@ -53,19 +53,23 @@ html {
     a li:hover,
     li:hover {
         background-color: lighten($color: $primaryColor, $amount: 40%);
-        color: white;
+        color: $primaryColor;
         border-radius: 5px 0;
         transition: 0.3s;
+
+        i {
+            color: $primaryColor;
+        }
     }
 
     a.actived li,
     li.actived {
-        background-color: $primaryColor;
-        color: white;
+        background-color: white;
+        color: $primaryColor;
         border-radius: 5px 0;
 
         i {
-            color: white;
+            color: $primaryColor;
         }
     }
 }
@@ -75,11 +79,11 @@ html {
 }
 
 .menuBar-big .classesIcon {
-    color: $primaryColor;
+    color: white;
 }
 
 .menuBar-big .classesMenu {
-    background-color: #d3d3d3;
+    background-color: $primaryColor;
     width: 227.5px;
 }
 

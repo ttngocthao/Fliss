@@ -90,57 +90,53 @@
               <div class="contact-form">
                 <h2>Leave us a message</h2>
 
-                <form id="contact-form" onsubmit="submitForm(); return false;">
+                <form
+                  method="post"
+                  action="http://www.flissfameacademy.com/cgi-bin/FormMail.pl"
+                  accept-charset="ISO-8859-1"
+                  onsubmit="var originalCharset = document.charset; 
+                document.charset = 'ISO-8859-1'; 
+                window.onbeforeunload = function () {document.charset=originalCharset;};"
+                >
+                  <p><label>Full Name</label><input name="realname" /></p>
+
                   <p>
-                    <label>First Name</label
-                    ><input
-                      id="customerFirstName"
-                      placeholder="First Name"
-                      required
-                    />
-                  </p>
-                  <p>
-                    <label>Last Name</label
-                    ><input
-                      id="customerLastName"
-                      placeholder="Last Name"
-                      required
-                    />
-                  </p>
-                  <p>
-                    <label>Phone number</label
-                    ><input
-                      id="customerPhone"
-                      placeholder="Phone Number"
-                      required
-                    />
+                    <label>Phone number</label><input type="tel" name="phone" />
                   </p>
                   <p>
                     <label>Email Address</label
-                    ><input
-                      id="customerEmail"
-                      placeholder="Email Address"
-                      type="email"
-                      required
-                    />
+                    ><input name="email" type="email" />
                   </p>
+                  <p><label>Email Address</label><input name="subject" /></p>
                   <p>
                     <label>Message</label>
-                    <textarea
-                      id="customerMsg"
-                      placeholder="Write your message here"
-                      rows="5"
-                      required
-                    ></textarea>
+                    <textarea name="Message" rows="5"></textarea>
                   </p>
 
                   <p>
-                    <input
-                      id="contactSubmitBtn"
-                      type="submit"
-                      value="Submit"
-                    /><span id="status"></span>
+                    <input type="submit" value="Send" />
                   </p>
+                  <input
+                    type="hidden"
+                    name="recipient"
+                    value="contact-us@flissfameacademy.com"
+                  />
+
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="http://www.flissfameacademy.com/thanks.html"
+                  />
+                  <input
+                    type="hidden"
+                    name="missing_fields_redirect"
+                    value="http://www.flissfameacademy.com/error.html"
+                  />
+                  <input
+                    type="hidden"
+                    name="required"
+                    value="realname,email,Message"
+                  />
                 </form>
               </div>
             </div>
@@ -209,7 +205,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/menubar.js"></script>
-    <script src="scripts/contactForm.js"></script>
+    <!-- <script src="scripts/contactForm.js"></script> -->
     <!--GoogleMap-->
     <script src="scripts/googleMap.js"></script>
     <script
