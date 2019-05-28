@@ -1,7 +1,13 @@
 [
   {
     "albumName": "artDesign",
-    "photoUrls": ["./images/art/1.jpg", "./images/art/2.jpg"]
+    "photoUrls": [
+      "./images/art/1.jpg",
+      "./images/art/2.jpg",
+      "./images/art/3.jpg",
+      "./images/art/4.jpg",
+      "./images/art/5.jpg"
+    ]
   },
   {
     "albumName": "boxing",
@@ -45,7 +51,11 @@
       "./images/dancing/3.jpg",
       "./images/dancing/4.jpg",
       "/images/dancing/5.jpg",
-      "/images/dancing/6.jpg"
+      "/images/dancing/6.jpg",
+      "/images/dancing/7.jpg",
+      "/images/dancing/8.jpg",
+      "/images/dancing/9.jpg",
+      "/images/dancing/10.jpg"
     ]
   }
 ]
